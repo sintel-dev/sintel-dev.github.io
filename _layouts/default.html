@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#6D2779"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
+
+    <link rel="stylesheet" href="{{'/css/main.css' | absolute_url }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="icon" type="image/png" href="{{'/images/favicon.png' | absolute_url}}"/>
+    <link rel="apple-touch-icon" href="{{'/images/favicon.png' | absolute_url}}">
+
+    <style>
+      img[src$=".jpg"] {
+        image-rendering: -moz-crisp-edges; 
+        image-rendering: -o-crisp-edges; 
+        image-rendering: -webkit-optimize-contrast;
+        image-rendering: crisp-edges;
+        -ms-interpolation-mode: nearest-neighbor; 
+      }
+      img {
+        image-rendering: pixelated;
+      }
+    </style>
+
+  </head>
+  <body>
+    {% include js-nav.html %}
+    {{ content }}
+    {% include footer.html %}
+
+    <script src="{{'js/dist/app.bundle.js' | relative_url }}"></script>
+    <script src="{{'js/dist/main.bundle.js' | relative_url }}"></script>
+
+    <script>
+      window.addEventListener('load', function(){
+        document.querySelectorAll('a.smooth-scroll[href^="#"]').forEach(anchor => {
+          anchor.addEventListener('click', function (e) {
+              e.preventDefault();
+              console.log(this.getAttribute('href'));
+              document.querySelector(this.getAttribute('href')).scrollIntoView({
+                  behavior: 'smooth'
+              });
+          });
+        });
+      })
+      
+      // $( document ).ready(function() {        
+      //   $('.nav-pills .nav-link').hover(function(e) {
+      //     e.preventDefault();   
+      //     $(this).tab('show');
+      //   });
+      // });
+    </script>
+    
+  </body>
+</html>

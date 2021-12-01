@@ -1,0 +1,62 @@
+<section class="py-3 bg-light position-relative" id="">
+  <span class="anchor" id="team"></span>
+  <div class="container">
+    {% include heading.html title="Team" classname="text-center" %}
+    <div class="row justify-content-center my-4 no-gutters">
+      {% for item in site.data.team %}
+        <div class="col-md-3 col-lg-auto col-sm-6 col-6 mb-4 mb-lg-0 team-item">
+          <div class="outer is-square team mx-auto rounded-circle">
+            <img src="/images/team/{{ item.image }}" alt="{{ item.name }}" class="inner d-block" loading="lazy">
+          </div>
+          <div class="text-center">
+            <h3 class="text-uppercase h6 font-weight-normal mt-3 mb-1">{{ item.name }}</h3>
+            <p class="mb-0 font-italic small">{{ item.title }}</p>
+            {% if item.info %}
+              <p class="mb-0 font-italic small">{{ item.info }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="container">
+    {% include heading.html title="R&D Team" classname="text-center" %}
+    <div class="row justify-content-center my-4 no-gutters">
+      {% for item in site.data.rd-team %}
+        <div class="col-md-3 col-lg-auto col-sm-6 col-6 mb-4 mb-lg-0 team-item">
+          <div class="outer is-square team mx-auto rounded-circle">
+            <img src="/images/team/{{ item.image }}" alt="{{ item.name }}" class="inner d-block" loading="lazy">
+          </div>
+          <div class="text-center">
+            <h3 class="text-uppercase h6 font-weight-normal mt-3 mb-1">{{ item.name }}</h3>
+            <p class="mb-0 font-italic small">{{ item.title }}</p>
+            {% if item.info %}
+              <p class="mb-0 font-italic small">{{ item.info }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+
+  <div class="container">
+    {% include heading.html title="Design Team" classname="text-center" %}
+    <div class="row justify-content-center my-4 no-gutters">
+      {% for item in site.data.design-team %}
+        <div class="col-md-3 col-lg-auto col-sm-6 col-6 mb-4 mb-lg-0 team-item">
+          <div class="outer is-square team mx-auto rounded-circle">
+            <img src="/images/team/{{ item.image }}" alt="{{ item.name }}" class="inner d-block" loading="lazy">
+          </div>
+          <div class="text-center">
+            <h3 class="text-uppercase h6 font-weight-normal mt-3 mb-1">{{ item.name }}</h3>
+            <p class="mb-0 font-italic small">{{ item.title }}</p>
+            {% if item.info %}
+              <p class="mb-0 font-italic small">{{ item.info }}</p>
+            {% endif %}
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+</section>

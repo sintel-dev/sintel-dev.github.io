@@ -1,0 +1,15 @@
+- title: Spacecraft
+  subtitle: Monitor spacecraft telemetry and solve an unsupervised time series anomaly detection problem.
+  image: /images/use-cases/rocket.svg
+  cta_text: Read the post
+  cta_url: "https://ieeexplore.ieee.org/abstract/document/9552849"
+- title: Wind Turbine
+  subtitle: Monitor wind energy production systems and solve a time series classification problem.
+  image: /images/use-cases/turbine.svg
+  cta_text: Read the post
+  cta_url: "https://ieeexplore.ieee.org/abstract/document/9555810"
+- title: Water
+  subtitle: Monitor water distribution and delivery networks and address time series classification and regression problems.
+  image: /images/use-cases/water.svg
+  cta_text: Read the post
+  cta_url: "https://ieeexplore.ieee.org/abstract/document/9555810"

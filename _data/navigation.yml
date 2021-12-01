@@ -1,0 +1,76 @@
+items:
+  - title: Libraries
+    dropBar: libraries
+    url: 
+    subItems: true
+    isDropdown: true
+    info_text:
+    info_url:
+    heading: Core Libraries
+    items:
+      - title: SigPro
+        slug: sintel-dev/SigPro
+        subtitle: Featurize time series with domain knowledge encoded for machine learning uses.
+        image: /images/tabs/img/Sintel-interface-01.png
+        icon: /images/tabs/sigpro.svg
+      - title: Pyteller
+        slug: sintel-dev/sintel
+        subtitle: Forecast time series data with user-friendly APIs.
+        image: /images/tabs/img/Sintel-interface-02.png
+        icon: /images/tabs/pyteller.svg
+      - title: ORION
+        slug: sintel-dev/Orion
+        subtitle: Detect time series anomalies (rare patterns) intelligently and flag them for expert review.
+        image: /images/tabs/img/Sintel-interface-03.png
+        icon: /images/tabs/orion.svg
+      - title: MTV
+        slug: sintel-dev/MTV
+        subtitle: Contains a suite of visualization components to support human-in-the-loop analysis workflow.
+        image: /images/tabs/img/Sintel-interface-04.png
+        icon: /images/tabs/mtv.svg
+    
+  - title: Developers
+    isDropdown: true
+    dropBar: resources
+    subItems: true
+    column_one:
+      heading: Developer tools
+      items:
+        - title: Sintel Rest API
+          icon: /images/nav/API-Icon.svg
+          url: "#"
+        - title: Python Client
+          icon: /images/nav/Client-Icon.svg
+          url: "#"
+        - title: Documentation
+          icon: /images/nav/Doc-Icon.svg
+          url: "#"
+    column_two:
+      heading: Use Cases
+      items:
+        - title: Spacecraft
+          subtitle: Monitor spacecraft telemetry and solve an unsupervised time series anomaly detection problem.
+          image: /images/nav/SpaceCraft-Icon.svg
+          cta_text: Read the post
+          url: "https://ieeexplore.ieee.org/abstract/document/9552849"
+        - title: Wind Turbine
+          subtitle: Monitor wind energy production systems and solve a time series classification problem.
+          image: /images/nav/WindTurbine-Icon.svg
+          cta_text: Read the post
+          url: "https://ieeexplore.ieee.org/abstract/document/9555810"
+        - title: Water
+          subtitle: Monitor water distribution and delivery networks and address time series classification and regression problems.
+          image: /images/nav/Water-Icon.svg
+          cta_text: Read the post
+          url: "https://ieeexplore.ieee.org/abstract/document/9555810"
+    info_text: "https://github.com/signals-dev"
+    info_url: "https://github.com/signals-dev"
+  - title: Publications
+    url: "#publications"
+  - title: Team
+    url: "#team"
+  - title: Blog
+    url: "https://medium.com/@dailabmit"
+  - title: Contact
+    url: "#contact"
+    

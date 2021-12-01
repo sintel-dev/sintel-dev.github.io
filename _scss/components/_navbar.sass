@@ -1,0 +1,162 @@
+.navbar-container
+  max-width: 1360px
+
+*:focus
+  outline-style: solid
+  outline-width: 3px
+.globalNav__Imgbtn
+  font-size: 9px
+  line-height: 1
+
+.globalNavCollapse
+  +media-breakpoint-down(md)
+    padding: 12px
+    background-color: $white
+    position: fixed
+    top: 56px
+    left: 0px
+    right: 0px
+    bottom: 0px
+    overflow: scroll
+
+
+.globalNav-SubItem
+  opacity: 0
+  transform: translateX(0px)
+  position: relative
+
+  &:hover
+    text-decoration: none
+    opacity: .85
+
+    span
+      background-color: $light  
+
+  +media-breakpoint-down(lg)
+    padding-top: 5px
+    padding-bottom: 5px
+  
+
+.globalNav__Dropdown
+  left: 0
+  right: 0
+  position: absolute
+  
+  visibility: hidden
+  background-color: $white
+  height: auto
+  opacity: 0
+  transition: height 250ms ease-in, opacity 250ms linear, visibility 0ms linear 250ms, box-shadow 200ms ease-in
+  box-shadow: 0 0 .5rem rgba(0,0,0,0)
+
+  +media-breakpoint-down(md)
+    position: relative
+    display: none
+    z-index: 3
+
+  +media-breakpoint-up(lg)
+    box-shadow: 0 0.25rem .25rem rgba(0,0,0,0.10)
+.globalNav__Brand
+  padding-top: 9px
+  padding-bottom: 8px
+
+.globalNav__Link
+  position: relative
+  border: none
+  background-color: transparent
+  padding: 8px 8px
+  text-decoration: none
+  color: $white
+  display: block
+  cursor: pointer
+  width: 100%
+  text-align: left
+
+  &:hover
+    text-decoration: none
+    color: $light
+    background-color: $primary
+  +media-breakpoint-up(lg)
+    padding: 16px 16px
+    width: auto
+    text-align: center
+
+    .is-active.globalNav__Drop_item &
+      background-color: $primary
+      &::after
+        display: block
+        content: ''
+        width: 16px
+        left: 50%
+        margin-left: -8px
+        height: 16px
+        background-image: url(/images/chevron-compact-down.svg)
+        position: absolute
+
+.globalNav__Item
+  z-index: 0
+  &.is-active
+    z-index: 2
+    +media-breakpoint-down(md)
+
+    .globalNav-SubItem
+      position: relative
+      z-index: 9999
+      opacity: 1
+      transform: translateX(0px)
+      transition: opacity 200ms ease-out 50ms, transform 250ms ease-out
+
+      &:hover
+        opacity: .85
+    .globalNav__Image
+      opacity: 1
+
+    .globalNav__Dropdown
+      background-color: #fff
+      z-index: 9999
+      display: block
+      visibility: visible
+      height: auto
+      overflow: hidden
+      opacity: 1
+      transition: height 250ms ease-in, visibility 0ms linear 0ms
+
+      +media-breakpoint-down(lg)
+        height: auto
+        display: block
+
+.globalNav__Image
+  opacity: 0
+  transition: opacity 200ms ease-out 50ms
+  img
+    transform: scale(1)
+    transition: all 200ms linear
+
+  &:hover
+    img
+      transform: scale(1.05)
+
+.navbar-toggler 
+  .navbar-toggler-icon
+    background-image: $navbar-dark-toggler-icon-bg
+  
+  &.collapsed  
+    .navbar-toggler-icon
+      background-image: $navbar-dark-toggler-icon-bg
+
+.embed-responsive-nav
+  &:before
+    padding-top: 52.3333% 
+
+
+.globalNav_clps
+  +media-breakpoint-down(md)
+    overflow-y: scroll
+    max-height: calc( 100vh - 58px )
+
+.wrap
+  max-width: 1140px
+  width: 100%
+  padding-right: 15px
+  padding-left: 15px
+  margin: 0 auto

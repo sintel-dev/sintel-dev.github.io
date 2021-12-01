@@ -1,0 +1,60 @@
+body {
+  font-family: "HelveticaNeue", sans-serif;
+}
+
+.content p {
+  font-size: 1.125rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+  line-height: 1.7;
+}
+
+a > img {
+  max-width: 100%;
+}
+
+a.hover-opacity {
+  &:hover {
+    text-decoration: none;
+    opacity: .8;
+  }
+}
+
+.global_nav__link {
+  font-size: 1.15rem;
+  
+
+  .navbar-expand-lg .navbar-nav & {
+    &.nav-link {
+      @include media-breakpoint-up(lg) {
+        padding-left: 24px;
+        padding-right: 24px;
+      }
+      @include media-breakpoint-up(xl) {
+        padding-left: 40px;
+        padding-right: 40px;
+      }
+    }
+  }
+  
+  .navbar-dark .navbar-nav & {
+    &.nav-link {
+
+      color: #fff;
+    }
+  }
+}
+
+.anchor {
+  position: absolute;
+  top: -60px;
+}
+
+.btn-grad {
+  color: white;
+  background: radial-gradient(#802E80, #732A80);
+}
+
+.fs-sm {
+  font-size: 0.85rem;
+}

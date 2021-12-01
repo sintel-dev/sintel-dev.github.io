@@ -1,0 +1,69 @@
+.text-10 {
+  font-size: 0.625em;
+}
+
+.text-14 {
+  font-size: 0.875em;
+}
+
+.text-20 {
+  font-size: 1.25em;
+}
+
+.desc {
+
+}
+
+body {
+  @include media-breakpoint-up(xxl) {
+    .h1 {
+      font-size: 2.375rem;
+    }
+    .h2 {
+      font-size: 2.375rem;
+    }
+    .h3 {
+      font-size: 1.5625rem;
+    }
+    .h4 {
+      font-size: 1.35rem;
+    }
+    .lead {
+      font-size: 1.65rem;
+    }
+    .desc {
+      font-size: 1.125rem;
+    }
+
+    .text-10 {
+      font-size: 0.75em;
+    }
+  }
+  @include media-breakpoint-up(xxxl) {
+    .h1 {
+      font-size: 2.65rem;
+    }
+    .h2 {
+      font-size: 2.375rem;
+    }
+    .h3 {
+      font-size: 2.125rem;
+    }
+    .h4 {
+      font-size: 1.5625rem;
+    }
+    .lead {
+      font-size: 1.625rem;
+    }
+    .desc {
+      font-size: 1.5rem;
+    }
+  }
+  @include media-breakpoint-up(xxxl) {
+    // font-size: 110%;
+  }
+  @include media-breakpoint-up(xxxxl) {
+    // font-size: 112.5%;
+  }
+ 
+}

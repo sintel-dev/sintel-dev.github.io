@@ -1,0 +1,12 @@
+- name: SERGIU OJOC
+  image: sergiu.png
+  title: Frontend Developer
+  info: DAI Lab, MIT
+- name: IULIA IONESCU
+  image: iulia.png
+  title: UI/UX Designer
+  info: DAI Lab, MIT
+- name: ARASH AKHGARI
+  image: arash.jpg
+  title: Animator & Graphic Designer
+  info: DAI Lab, MIT

@@ -1,0 +1,219 @@
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+  background-color: transparent;
+  cursor: pointer;
+  width: 280px;
+  height: 280px;
+  border: 1px solid #f1f1f1;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+  @include media-breakpoint-up(md) {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card:hover .outer {
+  opacity: 0;
+  transition: opacity 100ms ease-in;
+}
+
+/* Position the front and back side */
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: #ffffff;
+  border: 1px solid black;
+  border-radius: 5px;
+  color: black;
+  z-index: 0;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(61, 61, 61);
+  border-radius: 5px;
+  color: white;
+  transform: rotateY(180deg);
+
+  .description {
+    height: 100%;
+    overflow-wrap: break-word; 
+    overflow: scroll; 
+  }
+}
+
+.hero-wrap {
+  background-image: linear-gradient(30deg, #060117, #15123D, #15304E, #2B4A41);
+}
+
+.hero {
+  
+  margin-top: 64px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right bottom;
+  height: auto;
+  @include media-breakpoint-up(md) {
+    background-image: url('/images/hero.png');
+    height: 80vh;
+    max-height: 540px;
+    margin-top: 64px;
+    background-position: 40%;
+  }
+  @include media-breakpoint-up(lg) {
+    height: 80vh;
+    max-height: 600px;
+    margin-top: 64px;
+  }
+  @include media-breakpoint-up(xl) {
+    background-size: cover;
+    max-height: 680px;
+  }
+}
+
+.outer {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding: 0;
+  overflow: hidden;
+
+  &::before {
+    content: '';
+    display: block;
+  }
+
+  &.is-paper {
+    &::before {
+      padding-top: 129%;
+    }
+  }
+
+  &.is-square {
+    &::before {
+      padding-top: 100%;
+    }
+  }  
+}
+
+.inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+}
+
+.tab-tree-top {
+  position: relative;
+  z-index: 1;
+
+  @include media-breakpoint-up(md) {
+    &::after {
+      position: absolute;
+      top: 10%;
+      bottom: -24%;
+      width: 1px;
+      z-index: 1;
+      left: 31px;
+      display: block;
+      border-left: 1px solid #E5E5E6;
+      content: ''
+    }
+  }
+}
+
+.tab-tree-v {
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+    &::after {
+      position: absolute;
+      top: -43%;
+      bottom: -24%;
+      width: 1px;
+      z-index: 1;
+      left: 31px;
+      display: block;
+      border-left: 1px solid #E5E5E6;
+      content: ''
+    }
+  }
+}
+
+.tab-tree {
+  position: relative;
+
+  @include media-breakpoint-up(md) {
+  
+    &::before {
+      position: absolute;
+      display: block;
+      top: 0px;
+      height: 24px;
+      border-bottom-left-radius: 8px;
+  
+      width: 25px;
+      border-left: 1px solid #E5E5E6;
+      border-bottom: 1px solid #E5E5E6;
+      z-index: 1;
+      left: 31px;
+      content: '';
+  
+    }
+  }
+}
+
+.tab-link {
+  
+  @include media-breakpoint-up(md) {
+    padding-left: 48px;
+  }
+
+  &:hover {
+    background: $light;
+  }
+
+  &.active {
+    background-image: $primary;
+  }
+  
+  transition: all 200ms ease-in;
+}
+
+.tab-icon {
+  background-color: #EAE9E1;
+  .active & {
+    background-color: #EAE9E1;
+  }
+}
+
+.tab-icon-top {
+  background-color: #B55236;
+}

@@ -1,0 +1,235 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+  <div class="container">
+    <a class="navbar-brand globalNav__Brand mr-0" href="/" tabindex="1">
+      <img src="{{'images/sintel-logo.svg' | relative_url }}" width="40" height="40"
+        class="d-inline-block align-top logo" alt="Sibyl logo" loading="lazy">
+      <span class="sr-only">
+        Sibyl
+      </span>
+    </a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse globalNav_clps" id="navbarSupportedContent">
+
+      <ul class="navbar-nav ml-auto">
+
+        {% assign nav_items = site.data.navigation.items %}
+
+        {% for item in nav_items %}
+
+          {% if item.subItems %}
+
+            {% if item.dropBar == 'resources' %}
+
+            <li class="globalNav__Item globalNav__Drop_item">
+              <button class="globalNav__Link" tabindex="1">
+                {{ item.title }}
+              </button>
+              <div class="globalNav__Dropdown rounded-0 m-0 w-100" aria-labelledby="navbarDropdown" style="width: 100%">
+                <div class="wrap mt-md-4">
+                  <div class="row">
+                    <div class="col-lg-9">
+                      <p style="font-size: 18px;" class="font-weight-bold mb-2 mt-2 text-primary ">{{ item.column_one.heading }}</p>
+                      <hr>
+                      <div class="row">
+                        {% for entry in item.column_one.items %}
+                        <div class="col-md-4 globalNav-SubItem">
+                          <div class="media mb-2 d-flex align-items-center">
+                            <img src="{{entry.icon}}" class="mr-2 rounded-circle" width="36" height="36" alt="Name">
+                            <div class="media-body">
+                              <a style="font-size: 18px;" class="d-inline-block font-weight-bold text-primary" href="{{entry.url}}"
+                                tabindex="1">{{ entry.title }}</a>
+                            </div>
+                          </div>
+                        </div>
+                        {% endfor %}
+                      </div>
+                      <div class="row mb-4 lg-mb-0 mt-lg-4">
+                        <div class="col-md-12 globalNav-SubItem">
+                          <div class="media mb-1 d-flex align-items-center">
+                            <img src="/images/nav/Github-Logo.svg" class="mr-2" width="20" height="20"
+                              alt="Name">
+                            <div class="media-body">
+                              <a tabindex="1" class="text-primary small" href="{{ item.info_url }}">{{ item.info_text }}</a>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-2 offset-lg-1 bg-light rounded-lg">
+                      <p style="font-size: 18px;" class="text-center font-weight-bold mb-2 mt-2 text-primary ">{{ item.column_two.heading }}</p>
+                      <hr>
+                      <div class="row">
+                        <div class="col-12">
+                          <div class="h-100 row d-flex flex-wrap justify-content-center">
+                            {% for entry in item.column_two.items %}
+                            <div class="col-auto col-sm-4 col-lg-12 globalNav-SubItem">
+                              <div class="media mb-2 d-flex align-items-center">
+                                <img src="{{entry.image}}" class="mr-2" width="20" height="20"
+                                  alt="Name">
+                                <div class="media-body">
+                                  <a class="d-inline-block text-primary" href="{{entry.url}}" tabindex="1">{{ entry.title }}</a>
+                                </div>
+                              </div>
+                            </div>
+                            {% endfor %}
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+                
+                <div class="mt-lg-4"></div>
+              </div>
+            </li>
+
+            {% elsif item.dropBar == 'libraries' %}
+
+            <li class="globalNav__Item globalNav__Drop_item">
+              {% if item.url %}
+              <a class="globalNav__Link d-none d-lg-block" tabindex="1" href="{{ item.url }}">
+                {{ item.title }}
+              </a>
+              <button class="globalNav__Link d-lg-none" tabindex="1">
+                {{ item.title }}
+              </button>
+              {% else %}
+              <button class="globalNav__Link" tabindex="1">
+                {{ item.title }}
+              </button>
+              {% endif %}
+
+              <div class="globalNav__Dropdown rounded-0 m-0 w-100" aria-labelledby="navbarDropdown" style="width: 100%">
+                <div class="wrap mt-md-4">
+                  <div class="row">
+                    <div class="col-12">
+                      <p style="font-size: 18px;" class="font-weight-bold mb-2 mt-2 text-primary ">{{ item.heading }}
+                      </p>
+                      <hr>
+                      <div class="row">
+                        {% for entry in item.items %}
+                        <div class="col-6 col-sm-6 col-md-3 globalNav-SubItem mb-3 lg-mb-0">
+                          {% if entry.icon %}
+                          <div class="media mb-2">
+                            <img src="{{entry.icon}}" class="mr-2 mr-lg-3 rounded-circle lazy" width="24" height="24"
+                              alt="{{ entry.title }}">
+                            <div class="media-body">
+                              <a style="font-size: 18px;" class="d-inline-block text-primary font-weight-bold"
+                                href="{{entry.url}}" tabindex="1">{{ entry.title }}</a>
+                            </div>
+                          </div>
+                          {% else %}
+                          <a style="font-size: 18px;" class="d-inline-block text-primary" href="{{entry.url}}"
+                            tabindex="1">{{ entry.title }}</a>
+                          {% endif %}
+                          <p style="font-size: 14px; line-height: 1.25;"
+                            class=" text-dark mb-0 font-weight-light d-none d-md-block">{{ entry.subtitle }}</p>
+                          <div class="software-project mt-2" data-project="{{ entry.slug }}">
+                          </div>
+                        </div>
+
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                {% if item.info_url != '' and item.info_url != null %}
+                <div class="bg-primary text-center mt-lg-3 font-weight-bold">
+                  <a tabindex="1" class="text-white small" href="{{ item.info_url }}">{{ item.info_text }}</a>
+                </div>
+                {% else %}
+                <div class="mt-lg-4"></div>
+                {% endif %}
+              </div>
+            </li>
+
+            {% else %}
+            <li class="globalNav__Item globalNav__Drop_item">
+              {% if item.url %}
+              <a class="globalNav__Link d-none d-lg-block" tabindex="1" href="{{ item.url }}">
+                {{ item.title }}
+              </a>
+              <button class="globalNav__Link d-lg-none" tabindex="1">
+                {{ item.title }}
+              </button>
+              {% else %}
+              <button class="globalNav__Link" tabindex="1">
+                {{ item.title }}
+              </button>
+              {% endif %}
+              <div class="globalNav__Dropdown rounded-0 m-0 w-100" aria-labelledby="navbarDropdown" style="width: 100%">
+                <div class="wrap my-2">
+                  <div class="row">
+                    <div class="col-lg-3">
+                      <a href="{{ item.image-url }}" class="d-none d-lg-block position-relative globalNav__Image"
+                        tabindex="1">
+                        <div class="embed-responsive embed-responsive-nav">
+                          <img class="embed-responsive-item lzy-nav-img"
+                            src="data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgMjU1IDEzMyIgdmVyc2lvbj0iMS4xIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPgogIDxyZWN0IHdpZHRoPSIyNTUiIGhlaWdodD0iMTMzIiBzdHJva2U9ImJsYWNrIiBmaWxsPSJ0cmFuc3BhcmVudCIvPgo8L3N2Zz4="
+                            data-src="{{ item.image }}" data-srcset="{{ item.image }}, {{ item.image2x }} 2x"
+                            alt="{{ item.image-link-text }}">
+                        </div>
+                        {% if item.button-show %}
+                        <div class="position-absolute fixed-bottom text-center text-dark">
+                          <p>
+                            <span
+                              class="font-weight-semibold text-uppercase btn btn-primary btn-sm border-0 globalNav__Imgbtn">{{
+                              item.image-link-text }}</span>
+                          </p>
+                        </div>
+                        {% endif %}
+                      </a>
+                    </div>
+                    <div class="col-lg-9">
+
+                      <div class="h-100 row d-flex flex-wrap justify-content-start">
+                        {% for entry in item.subItems %}
+                        <div class="col-md-4 globalNav-SubItem">
+                          <a class="d-inline-block text-primary" href="{{entry.url}}" tabindex="1">{{ entry.title }}</a>
+                          <p class="small text-secondary mb-0 font-weight-light d-none d-md-block">{{ entry.help_text }}</p>
+                        </div>
+                        {% endfor %}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            {% endif %}
+
+          {% else %}
+          <li class="globalNav__Item globalNav__Item_link">
+            <a class="globalNav__Link" href="{{ item.url }}" tabindex="1">{{ item.title }}</a>
+          </li>
+          {% endif %}
+
+        {% endfor %}
+
+      </ul>
+
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link px-0 py-0 text-primary h5 font-weight-bold" rel="nofollow"
+            href=""></a>
+        </li>
+      </ul>
+      <ul class="navbar-nav ml-lg-3">
+        <li class="nav-item">
+          <a href="https://giving.mit.edu/search/node/Veeramachaneni"
+            class="btn btn-sm l-s-xs btn btn-lg btn-light text-uppercase font-weight-semibold" rel="nofollow">
+            Donate
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </div>
+</nav>
+<script>
+  {% include js-nav.js %}
+</script>

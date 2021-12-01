@@ -1,0 +1,10 @@
+<div class="row">
+  <div class="col-12">
+    <h2 class="h3 mt-3 text-secondary font-weight-bold {{ include.classname }}">{{ include.title }}</h2>
+    {% if include.subtitle != null %}
+    <p class="mx-auto text-center text-dark font-weight-normal" style="max-width: 640px;">
+      {{ include.subtitle }}
+    </p>
+    {% endif %}
+  </div>
+</div>

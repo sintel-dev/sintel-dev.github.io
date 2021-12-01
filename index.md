@@ -1,2 +1,0 @@
-## sintel website
-### coming soon
