@@ -1,1 +1,34 @@
-theme: jekyll-theme-slate
+# Site settings
+name: Sintel
+title: Sintel
+email: sintel@mit.edu
+description: > # this means to ignore newlines until "baseurl:"
+  Sintel
+# baseurl:  # the subpath of your site, e.g. /blog/
+# sintel-dev.github.io
+
+url: "http://localhost:3000" # the base hostname & protocol for your site
+# url: "https://sintel.dev" # the base hostname & protocol for your site
+twitter_username: jekyllrb
+github_username:  jekyll
+
+permalink: pretty
+
+# Build settings
+markdown: kramdown
+
+exclude:
+  - package.json
+  - package-lock.json
+  - node_modules
+  - gulpfile.js
+  - README.md
+  - .jekyll-cache
+  - bootstrap-vars.scss
+  - vendor
+
+keep_files:
+  - _site/css
+  - _site/js
+
+include: ['_pages']
