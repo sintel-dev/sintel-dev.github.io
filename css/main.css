@@ -9893,7 +9893,7 @@ a.hover-opacity:hover {
 }
 
 .hero {
-  margin-top: 64px;
+  margin-top: 78px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right bottom;
@@ -9905,16 +9905,14 @@ a.hover-opacity:hover {
     background-image: url("/images/hero.png");
     height: 80vh;
     max-height: 540px;
-    margin-top: 64px;
-    background-position: 40%;
+    background-position: 60%;
   }
 }
 
 @media (min-width: 992px) {
   .hero {
     height: 80vh;
-    max-height: 600px;
-    margin-top: 64px;
+    max-height: 640px;
   }
 }
 
