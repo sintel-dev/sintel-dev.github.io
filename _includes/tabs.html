@@ -15,19 +15,19 @@
           </div>
         </div> -->
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="my-1 my-md-1 nav-link active tab-link d-flex px-md-2 tab-tree-top" id="v-pills-sintel-tab" data-toggle="pill" href="#v-pills-sintel" role="tab" aria-controls="v-pills-sintel" aria-selected="true">
+          <a class="my-1 my-md-1 nav-link tab-link d-flex px-md-2 tab-tree-top" id="v-pills-sintel-tab" data-toggle="pill" href="#v-pills-sintel" role="tab" aria-controls="v-pills-sintel" aria-selected="true">
             <div class="px-2 d-none d-sm-block relative " style="z-index: 10;">
               <img style="padding: 6px;" class="tab-icon-top rounded-circle" width="32" height="32" src="images/sintel-logo.svg" alt="Sintel"/>
             </div>
             <div>
               <p class="my-1 font-weight-bold">Sintel</p>
-              <p class="mb-1 small d-none d-md-block">RESTful APIs connecting the following libraries to empower your team to build human-in-the-loop analysis workflow for time series data.</p>
+              <!-- <p class="mb-1 small d-none d-md-block">RESTful APIs connecting the following libraries to empower your team to build human-in-the-loop analysis workflow for time series data.</p> -->
             </div>
           </a>
 
           {% for item in site.data.tabs %}
             {% if forloop.first %}
-            <a class="my-1 my-md-1 nav-link tab-link d-flex tab-tree tab-tree-v" id="v-pills-{{ item.name }}-tab" data-toggle="pill" href="#v-pills-{{ item.name }}" role="tab" aria-controls="v-pills-{{ item.name }}" aria-selected="true">
+            <a class="my-1 my-md-1 nav-link active tab-link d-flex tab-tree tab-tree-v" id="v-pills-{{ item.name }}-tab" data-toggle="pill" href="#v-pills-{{ item.name }}" role="tab" aria-controls="v-pills-{{ item.name }}" aria-selected="true">
               <div class="px-2 d-none d-sm-block">
                 <img style="padding: 6px;" class="tab-icon rounded-circle" width="32" height="32" src="{{ item.icon }}" alt="{{ item.title }}"/>
               </div>

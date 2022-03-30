@@ -1,24 +1,36 @@
-- title: SigPro
+- title: Featurization
   name: sigpro
   slug: sintel-dev/SigPro
   subtitle: Featurize time series with domain knowledge encoded for machine learning uses.
-  image: /images/tabs/img/Sintel-interface-01.png
+  image: /images/tabs/img/forcasting_example.png
   icon: /images/tabs/sigpro.svg
-- title: Pyteller
+- title: Forecasting
   name: pyteller
   slug: sintel-dev/sintel
-  subtitle: Forecast time series data with user-friendly APIs.
-  image: /images/tabs/img/Sintel-interface-02.png
+  subtitle: Predict future values by analyzing past trends.
+  image: /images/tabs/img/forcasting_example.png
   icon: /images/tabs/pyteller.svg
-- title: ORION
+- title: Anomaly Detection
   name: orion
   slug: sintel-dev/Orion
-  subtitle: Detect time series anomalies (rare patterns) intelligently and flag them for expert review.
-  image: /images/tabs/img/Sintel-interface-03.png
+  subtitle: Identify anomalous segments (rare patterns).
+  image: /images/tabs/img/anomaly_detection_example.png
   icon: /images/tabs/orion.svg
-- title: MTV
+- title: Classification
+  name: draco_c
+  slug: sintel-dev/Orion
+  subtitle: Classify a segment of time series into a certain category.
+  image: /images/tabs/img/classification_example.png
+  icon: /images/tabs/orion.svg
+- title: Benchmarking
+  name: benchmark
+  slug: sintel-dev/Orion
+  subtitle: Benchmark machine learning models for different tasks.
+  image: /images/tabs/img/anomaly_detection_example.png
+  icon: /images/tabs/orion.svg
+- title: Data Visualization
   name: mtv
   slug: sintel-dev/MTV
-  subtitle: Contains a suite of visualization components to support human-in-the-loop analysis workflow.
-  image: /images/tabs/img/Sintel-interface-04.png
+  subtitle: Use a suite of visualization components to support human-in-the-loop analysis workflow.
+  image: /images/tabs/img/mtv.png
   icon: /images/tabs/mtv.svg
