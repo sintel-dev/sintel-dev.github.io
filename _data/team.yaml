@@ -1,45 +1,57 @@
 - name: Dongyu Liu
+  link: ""
   image: dongyu.jpeg
   title: Postdoc (Project Lead)
   info: DAI Lab, MIT
 - name: Kalyan Veeramachaneni
+  link: ""
   image: kalyan.jpeg
   title: Principal Investigator
   info: DAI Lab, MIT
 - name: Sarah Alnegheimish
+  link: ""
   image: mit-sarah.png
   title: MS Student
   info: DAI Lab, MIT
 - name: Frances Hartwell
+  link: ""
   image: frances.png
   title: MS Student
   info: DAI Lab, MIT
 - name: Lawrence Wong
+  link: ""
   image: lawrence.png
   title: MS Student
   info: DAI Lab, MIT
 - name: Hugo Ramirez
+  link: ""
   image: hugo.jpeg
   title: UROP Student
   info: DAI Lab, MIT
 - name: LAURE BERTI-ÉQUILLE
+  link: ""
   image: laure.jpeg
   title: Visiting Professor
   info: DAI Lab, MIT
 - name: Plamen Valentinov Kolev
+  link: ""
   image: mit-plamen.png
   title: Software Engineer
   info: DAI Lab, MIT
 - name: Carles Sala
+  link: ""
   image: mit-carles.png
   title: Software Engineer
   info: DAI Lab, MIT
 - name: Sergiu Ojoc
+  link: ""
   image: sergiu.png
   title: Frontend Developer
 - name: Iulia Ionescu
+  link: ""
   image: iulia.png
   title: UI/UX Designer
 - name: Arash Akhgari
+  link: ""
   image: arash.jpg
   title: Animator & Graphic Designer

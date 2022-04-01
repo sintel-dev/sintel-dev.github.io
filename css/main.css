@@ -10090,6 +10090,16 @@ a.hover-opacity:hover {
   background-color: #B55236;
 }
 
+.ascale {
+  transform: scale(1);
+  display: block;
+  transition: transform 200ms ease-in-out;
+}
+
+.ascale:hover {
+  transform: scale(1.1);
+}
+
 /* Layout */
 .paper {
   border: 2px solid #183F5B;
