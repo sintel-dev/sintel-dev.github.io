@@ -5,18 +5,14 @@
       <div class="col-md-10 col-lg-10">
         {% include heading.html classname="text-center" title="Sintel Research" %}
         {% for item in site.data.publications %}
-          <div class="row justify-content-center my-4 align-items-center">
-            <div class="col-auto" style="width: 12rem;">
+          <div class="row justify-content-center my-5 my-md-4">
+            <div class="col-9 col-md-auto" style="width: 12rem;">
               <div class="bg-white">
-                <div class="embed-responsive embed-responsive-4by3">
-                  <img class="mx-auto d-block embed-responsive-item"
-                    style="object-fit: contain;"
-                   src="{{ item.image }}" alt="{{ item.title }}" />
-                  
-                </div>
+                <img class="mx-auto d-block w-100 mb-3 mb-lg-0"
+                  src="{{ item.image }}" alt="{{ item.title }}" />
               </div>
             </div>
-            <div class="col">
+            <div class="col-md col-12">
               <p class="font-weight-bold h6 text-secondary mb-1">{{ item.title }}</p>
               <p class="text-secondary mb-1">{{ item.subtitle }}</p>
               <p class="text-secondary mb-1">
@@ -25,9 +21,14 @@
                 </span>
                 {{ item.tag_text }}</p>
               <p class=" mb-1">
-                Download 
-                {{ item.download_text }} | 🏆
+                Download: 
+                {% for link in item.links %}
+                  <a href="{{ link.cta_url }}">[{{ link.name }}]</a>
+                {% endfor %}
+                {% if item.cta_url != null and item.cta_text != null%}
+                | 🏆
                 <a href="{{ item.cta_url }}" class="text-warning">{{ item.cta_text }}</a>
+                {% endif %}
               </p>
             </div>
           </div>
