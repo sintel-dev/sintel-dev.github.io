@@ -1,0 +1,116 @@
+- Library_name: Orion
+  badge_name: Orion
+  image_name: Orion
+  Github_Link: "https://github.com/signals-dev/Orion"
+  github_owner: "signals-dev"
+  github_repo: "Orion"
+  Theme: ML tasks
+  Text_in_it: "A machine learning library for detecting anomalies in signals. "
+  website: https://signals-dev.github.io/Orion/
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://signals-dev.github.io/Orion/"
+       
+- Library_name: Draco
+  badge_name: Draco
+  image_name: Featurization
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "HDI-Project"
+  github_repo: "ATM"
+  Theme: ML Tasks 
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://hdi-project.github.io/ATM/
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://hdi-project.github.io/ATM/"
+       
+- Library_name: Pyteller
+  badge_name: Pyteller
+  image_name: Pyteller
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "HDI-Project"
+  github_repo: "ATM"
+  Theme: ML Tasks 
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://hdi-project.github.io/ATM/
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://hdi-project.github.io/ATM/"
+
+- Library_name: ML-Star
+  badge_name: ML-Star
+  image_name: ML-Star
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "HDI-Project"
+  github_repo: "ATM"
+  Theme: ML Tasks, Benchmarking
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://hdi-project.github.io/ATM/
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://hdi-project.github.io/ATM/"
+
+- Library_name: TSGym
+  badge_name: TSGym
+  image_name: Benchmarking
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "HDI-Project"
+  github_repo: "ATM"
+  Theme: Benchmarking
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://hdi-project.github.io/ATM/
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://hdi-project.github.io/ATM/"
+
+- Library_name: Sintel
+  badge_name: Sintel
+  image_name: Sintel
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "HDI-Project"
+  github_repo: "ATM"
+  Theme: User Interactions
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://hdi-project.github.io/ATM/
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://hdi-project.github.io/ATM/"
+
+- Library_name: MTV
+  badge_name: MTV
+  image_name: MTV
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "sintel-dev"
+  github_repo: "sintel"
+  Theme: User Interactions
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://sintel.dev
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://hdi-project.github.io/ATM/"
+
+- Library_name: GPE
+  badge_name: GPE
+  image_name: GPE
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "sintel-dev"
+  github_repo: "sintel"
+  Theme: Data Labeling
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://sintel.dev
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://hdi-project.github.io/ATM/"
+
+- Library_name: SigPro
+  badge_name: SigPro
+  image_name: SigPro
+  Github_Link: "https://github.com/HDI-Project/ATM"
+  github_owner: "sintel-dev"
+  github_repo: "sintel"
+  Theme: Signal Processing
+  Text_in_it: "Auto Tune Models - A multi-tenant, multi-data system for automated machine learning. "
+  website: https://sintel.dev
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "https://hdi-project.github.io/ATM/"
