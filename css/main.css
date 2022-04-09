@@ -10100,6 +10100,16 @@ a.hover-opacity:hover {
   transform: scale(1.1);
 }
 
+.ascale-sponsor {
+  transform: scale(1);
+  display: block;
+  transition: transform 200ms ease-in-out;
+}
+
+.ascale-sponsor:hover {
+  transform: scale(1.04);
+}
+
 .bg-lightblue {
   background-color: #F2F8FE;
 }

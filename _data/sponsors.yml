@@ -1,0 +1,8 @@
+- name: ses
+  image: images/sponsors/ses.jpeg
+  url: "https://www.ses.com/"
+  width: 12rem
+- name: iberdrola
+  image: images/sponsors/iberdrola.png
+  url: "https://www.iberdrola.com/"
+  width: 20rem
