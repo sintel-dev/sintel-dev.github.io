@@ -17,7 +17,7 @@
   Github_Link: "https://github.com/sintel-dev/Draco"
   github_owner: "sintel-dev"
   github_repo: "Draco"
-  Theme: ML Tasks
+  Theme: ML Task
   Text_in_it: "Classifies time series segments into particular categories."
   website: https://github.com/sintel-dev/Draco
   Stackoverflow: ''
@@ -30,7 +30,7 @@
   Github_Link: "https://github.com/sintel-dev/pyteller"
   github_owner: "sintel-dev"
   github_repo: "pyteller"
-  Theme: ML Tasks 
+  Theme: ML Task 
   Text_in_it: "Predicts future values by analyzing past trends."
   website: https://github.com/sintel-dev/pyteller
   Stackoverflow: ''
@@ -43,7 +43,7 @@
   Github_Link: "https://github.com/sintel-dev/ml-stars"
   github_owner: "sintel-dev"
   github_repo: "ml-stars"
-  Theme: ML Tasks, Benchmarking
+  Theme: ML Task, Benchmarking
   Text_in_it: "Stores a collection of pipelines that will be used by Orion, Draco, and Pyteller."
   website: https://github.com/sintel-dev/ml-stars
   Stackoverflow: 
@@ -69,7 +69,7 @@
   Github_Link: "https://github.com/sintel-dev/sintel"
   github_owner: "sintel-dev"
   github_repo: "Sintel"
-  Theme: User Interactions
+  Theme: User Interaction
   Text_in_it: "Enables your team to build human-in-the-loop analytics workflow with predefined RESTFul APIs and MongoDB Schema."
   website: https://github.com/sintel-dev/sintel
   Stackoverflow: 
@@ -82,7 +82,7 @@
   Github_Link: "https://github.com/sintel-dev/MTV"
   github_owner: "sintel-dev"
   github_repo: "sintel"
-  Theme: User Interactions
+  Theme: User Interaction
   Text_in_it: "Integrates a suite of visualization techniques to support complex analytic workflow with human-in-the-loop "
   website: https://github.com/sintel-dev/MTV
   Stackoverflow: 
