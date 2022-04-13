@@ -3,3 +3,4 @@ bootstrap-vars.scss
 /_site
 .DS_Store
 vendor/
+*.lock

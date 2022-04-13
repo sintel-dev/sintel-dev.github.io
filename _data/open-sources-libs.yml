@@ -1,0 +1,116 @@
+- Library_name: Orion
+  badge_name: Orion
+  image_name: Orion
+  Github_Link: "https://github.com/sintel-dev/Orion"
+  github_owner: "sintel-dev"
+  github_repo: "Orion"
+  Theme: ML Task
+  Text_in_it: "Identifies anomalous time series segments."
+  website: https://signals-dev.github.io/Orion/
+  Stackoverflow: ''
+  slack_link: ''
+  docs_link: "https://sintel.dev/Orion/"
+       
+- Library_name: Draco
+  badge_name: Draco
+  image_name: Draco
+  Github_Link: "https://github.com/sintel-dev/Draco"
+  github_owner: "sintel-dev"
+  github_repo: "Draco"
+  Theme: ML Tasks
+  Text_in_it: "Classifies time series segments into particular categories."
+  website: https://github.com/sintel-dev/Draco
+  Stackoverflow: ''
+  slack_link: ''
+  docs_link: "https://sintel.dev/Draco/"
+       
+- Library_name: pyteller
+  badge_name: pyteller
+  image_name: pyteller
+  Github_Link: "https://github.com/sintel-dev/pyteller"
+  github_owner: "sintel-dev"
+  github_repo: "pyteller"
+  Theme: ML Tasks 
+  Text_in_it: "Predicts future values by analyzing past trends."
+  website: https://github.com/sintel-dev/pyteller
+  Stackoverflow: ''
+  slack_link: ''
+  docs_link: ''
+
+- Library_name: ml-stars
+  badge_name: ml-stars
+  image_name: ml-stars
+  Github_Link: "https://github.com/sintel-dev/ml-stars"
+  github_owner: "sintel-dev"
+  github_repo: "ml-stars"
+  Theme: ML Tasks, Benchmarking
+  Text_in_it: "Stores a collection of pipelines that will be used by Orion, Draco, and Pyteller."
+  website: https://github.com/sintel-dev/ml-stars
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: ""
+
+- Library_name: TSGym
+  badge_name: TSGym
+  image_name: TSGym
+  Github_Link: "https://github.com/sintel-dev/TSGym"
+  github_owner: "sintel-dev"
+  github_repo: "TSGym"
+  Theme: Benchmarking
+  Text_in_it: "Benchmarks machine learning models for different tasks."
+  website: https://github.com/sintel-dev/TSGym
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: ""
+
+- Library_name: Sintel
+  badge_name: Sintel
+  image_name: Sintel
+  Github_Link: "https://github.com/sintel-dev/sintel"
+  github_owner: "sintel-dev"
+  github_repo: "Sintel"
+  Theme: User Interactions
+  Text_in_it: "Enables your team to build human-in-the-loop analytics workflow with predefined RESTFul APIs and MongoDB Schema."
+  website: https://github.com/sintel-dev/sintel
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: "http://mtv.lids.mit.edu:3000/redoc"
+
+- Library_name: MTV
+  badge_name: MTV
+  image_name: MTV
+  Github_Link: "https://github.com/sintel-dev/MTV"
+  github_owner: "sintel-dev"
+  github_repo: "sintel"
+  Theme: User Interactions
+  Text_in_it: "Integrates a suite of visualization techniques to support complex analytic workflow with human-in-the-loop "
+  website: https://github.com/sintel-dev/MTV
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: ''
+
+- Library_name: gpe
+  badge_name: gpe
+  image_name: gpe
+  Github_Link: "https://github.com/sintel-dev/gpe"
+  github_owner: "sintel-dev"
+  github_repo: "gpe"
+  Theme: Data Labeling
+  Text_in_it: "Creates labeling functions to search occurrences of specific types of events in the past."
+  website: https://github.com/sintel-dev/gpe
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: ''
+
+- Library_name: SigPro
+  badge_name: SigPro
+  image_name: SigPro
+  Github_Link: "https://github.com/sintel-dev/SigPro"
+  github_owner: "sintel-dev"
+  github_repo: "SigPro"
+  Theme: Signal Processing
+  Text_in_it: "Featurizes time series with domain knowledge encoded for machine learning uses."
+  website: https://sintel.dev
+  Stackoverflow: 
+  slack_link: ''
+  docs_link: ''

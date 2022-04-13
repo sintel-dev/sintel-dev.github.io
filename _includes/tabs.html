@@ -1,79 +1,99 @@
 <section class="py-5 bg-white position-relative">
   <span class="anchor" id="about"></span>
-  <div class="container">
-    {% include heading.html classname="text-center" title="Transform. Discover. Visualize." subtitle="Build human-in-the-loop analysis workflow to transfer the insights into actions using our Machine Learning libraries, RESTful APIs, and Visualization tools." %}
-    <div class="row justify-content-center align-items-center my-4" id="tabs-container">
+  <div class="container-lg">
+    {% include heading.html classname="text-center" title="Analyze, Interact, Decide" subtitle="The ecosystem of Sintel
+    allows you to build advanced analytic workflows with human in the loop using the Machine Learning libraries,
+     RESTful APIs, and Visualization tools." %}
+    <!-- <div class="row justify-content-center align-items-center my-4" id="tabs-container"> -->
+    <div class="row justify-content-center my-4" id="tabs-container">
       <div class="col-lg-5 col-md-6 col-4">
-               
-        <!-- <div class="my- d-flex px-md-2 tab-tree-top">
+
+        <div class="my- d-flex px-md-2 tab-tree-top">
           <div class="px-2">
-            <img style="background-color: #C45735; padding: 6px;" class="tab-icon rounded-circle" width="32" height="32" src="images/sintel-logo.svg" alt="{{ item.title }}"/>
+            <img style="background-color: #C45735; padding: 6px;" class="tab-icon rounded-circle" width="32" height="32"
+              src="images/sintel-logo.svg" alt="">
           </div>
           <div>
             <p class="my-1 font-weight-bold text-primary">Sintel</p>
-            <p class="mb-1 small d-none d-md-block">RESTful APIs connecting the following libraries to empower your team to build human-in-the-loop analysis workflow for time series data.</p>
           </div>
-        </div> -->
+        </div>
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="my-1 my-md-1 nav-link active tab-link d-flex px-md-2 tab-tree-top" id="v-pills-sintel-tab" data-toggle="pill" href="#v-pills-sintel" role="tab" aria-controls="v-pills-sintel" aria-selected="true">
-            <div class="px-2 d-none d-sm-block relative " style="z-index: 10;">
-              <img style="padding: 6px;" class="tab-icon-top rounded-circle" width="32" height="32" src="images/sintel-logo.svg" alt="Sintel"/>
-            </div>
-            <div>
-              <p class="my-1 font-weight-bold">Sintel</p>
-              <p class="mb-1 small d-none d-md-block">RESTful APIs connecting the following libraries to empower your team to build human-in-the-loop analysis workflow for time series data.</p>
-            </div>
-          </a>
 
           {% for item in site.data.tabs %}
             {% if forloop.first %}
-            <a class="my-1 my-md-1 nav-link tab-link d-flex tab-tree tab-tree-v" id="v-pills-{{ item.name }}-tab" data-toggle="pill" href="#v-pills-{{ item.name }}" role="tab" aria-controls="v-pills-{{ item.name }}" aria-selected="true">
-              <div class="px-2 d-none d-sm-block">
-                <img style="padding: 6px;" class="tab-icon rounded-circle" width="32" height="32" src="{{ item.icon }}" alt="{{ item.title }}"/>
-              </div>
-              <div>
-                <p class="my-1 font-weight-bold">{{ item.title }}</p>
-                <p class="mb-1 small d-none d-md-block">{{ item.subtitle }}</p>
-              </div>
-            </a>
+                <a class="my-1 my-md-1 nav-link tab-link d-flex tab-tree tab-tree-v active" id="v-pills-{{item.name}}-tab"
+                data-toggle="pill" href="#v-pills-{{item.name}}" role="tab" aria-controls="v-pills-{{item.name}}" aria-selected="true">
+                <div class="px-2 d-none d-sm-block">
+                  <img style="padding: 6px;" class="tab-icon rounded-circle" width="32" height="32"
+                    src="{{ item.icon}}" alt="{{item.title}}">
+                </div>
+                <div>
+                  <p class="my-1 font-weight-bold">{{item.title}}</p>
+                  <p class="mb-1 small d-none d-md-block">{{item.subtitle}}</p>
+                </div>
+              </a>
             {% else %}
-            <a class="my-1 nav-link tab-link d-flex tab-tree {% unless forloop.last %}tab-tree-v{% endunless %}" id="v-pills-{{ item.name }}-tab" data-toggle="pill" href="#v-pills-{{ item.name }}" role="tab" aria-controls="v-pills-{{ item.name }}" aria-selected="false">
-              <div class="px-2 d-none d-sm-block">
-                <img style="padding: 6px;" class="tab-icon rounded-circle" width="32" height="32" src="{{ item.icon }}" alt="{{ item.title }}">
-              </div>
-              <div>
-                <p class="my-1 font-weight-bold">{{ item.title }}</p>
-                <p class="mb-1 small d-none d-md-block">{{ item.subtitle }}</p>
-              </div>
-            </a>
+              <a class="my-1 my-md-1 nav-link tab-link d-flex tab-tree {% unless forloop.last %}tab-tree-v{%endunless%}" id="v-pills-{{item.name}}-tab"
+                data-toggle="pill" href="#v-pills-{{item.name}}" role="tab" aria-controls="v-pills-{{item.name}}" aria-selected="false">
+                <div class="px-2 d-none d-sm-block">
+                  <img style="padding: 6px;" class="tab-icon rounded-circle" width="32" height="32"
+                    src="{{ item.icon}}" alt="{{item.title}}">
+                </div>
+                <div>
+                  <p class="my-1 font-weight-bold">{{item.title}}</p>
+                  <p class="mb-1 small d-none d-md-block">{{item.subtitle}}</p>
+                </div>
+              </a>
             {% endif %}
           {% endfor %}
         </div>
       </div>
       <div class="col-md-6 col-8">
-        <div class="embed-responsive embed-responsive-1by1 tab-content mx-lg-5 shadow rounded-lg" id="v-pills-tabContent">
-          <div class="embed-responsive-item tab-pane bg-white active" id="v-pills-sintel" role="tabpanel" aria-labelledby="v-pills-sintel-tab">
-            <div class="w-100 h-100 d-flex align-items-center">
-              <img class="px-2 py-3 px-md-3 py-md-4 w-100" style="object-fit: contain; object-position: center;" src="images/tabs/img/Sintel-interface-01.png"/>
-            </div>
-          </div>
+        <div class="tab-content rounded-lg px-2 px-lg-3 py-1 shadow" id="v-pills-tabContent">
+
           {% for item in site.data.tabs %}
+
           {% if forloop.first %}
-          <div class="embed-responsive-item tab-pane bg-white" id="v-pills-{{ item.name }}" role="tabpanel" aria-labelledby="v-pills-{{ item.name }}-tab">
-            <div class="w-100 h-100 d-flex align-items-center">
-              <img class="px-2 py-3 px-md-3 py-md-4 w-100" style="object-fit: contain; object-position: center;" src="{{ item.image }}"/>
+          <div class="tab-pane bg-white active" id="v-pills-{{item.name}}" role="tabpanel"
+            aria-labelledby="v-pills-{{item.name}}-tab">
+            <div class="w-100 h-100 bg-code position-relative">
+              <p class="mb-0 text-right">
+                <button class="copy-to-clipboard-button bg-transparent border-0 text-white" data-clipboard-target="#code-{{item.name}}">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="16" height="16"><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg>
+                </button>
+                <span class="text-dark bg-white text-sm py-1 px-2 rounded text-uppercase small mr-1">Code</span></p>
+              
+              <textarea class="position-absolute" id="code-{{item.name}}" style="z-index: -1; right: 10px; top: 5px; width: 0px; height: 0px">{{item.code}}</textarea>
+              <pre><code class="language-python">{{item.code}}</code></pre>
             </div>
           </div>
+          {% elsif item.code == null %}
+          <div class="tab-pane bg-white" id="v-pills-{{item.name}}" role="tabpanel"
+          aria-labelledby="v-pills-{{item.name}}-tab">
+          <div class="w-100 h-100">
+            <img class="w-100" style="image-rendering: auto; object-fit: contain; object-position: center;"
+              src="{{item.image}}">
+          </div>
+        </div>
           {% else %}
-          <div class="embed-responsive-item tab-pane bg-white" id="v-pills-{{ item.name }}" role="tabpanel" aria-labelledby="v-pills-{{ item.name }}-tab">
-            <div class="w-100 h-100 d-flex align-items-center">
-              <img class="px-2 py-3 px-md-3 py-md-4 w-100" style="object-fit: contain; object-position: center;" src="{{ item.image }}"/>
+          <div class="tab-pane bg-white" id="v-pills-{{item.name}}" role="tabpanel"
+            aria-labelledby="v-pills-{{item.name}}-tab">
+            <div class="w-100 h-100 bg-code position-relative">
+              <p class="mb-0 text-right">
+                <button class="copy-to-clipboard-button bg-transparent border-0 text-white" data-clipboard-target="#code-{{item.name}}">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="16" height="16"><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg>
+                </button>
+                <span class="text-dark bg-white text-sm py-1 px-2 rounded text-uppercase small mr-1">Code</span></p>
+              
+              <textarea class="position-absolute" id="code-{{item.name}}" style="z-index: -1; right: 10px; top: 5px; width: 0px; height: 0px">{{item.code}}</textarea>
+              <pre><code class="language-python">{{item.code}}</code></pre>
             </div>
           </div>
           {% endif %}
+          
           {% endfor %}
         </div>
       </div>
     </div>
   </div>
-</section> 
+</section>

@@ -1,0 +1,43 @@
+<section class="py-3 position-relative" id="">
+  <span class="anchor" id="sponsors"></span>
+  <div class="container">
+    {% include heading.html title="Our Sponsors" classname="text-center" %}
+    <div class="row justify-content-center align-items-center my-4">
+      {% for item in site.data.sponsors %}
+      <a href="{{ item.url }}" class="col-6 col-md-4 d-block ascale-sponsor" style="max-width: {{ item.width }}">
+        <div class="embed-responsive embed-responsive-21by9">
+          <img class="embed-responsive-item" src="{{ item.image | absolute_url }}" alt="{{ item.name }}" style="height: 100%; object-fit: contain;" />
+        </div>
+      </a>
+      {% endfor %}
+    </div>
+    <div class="row justify-content-center">
+      <div class="col-6">
+        <hr>
+      </div>
+    </div>
+    <div class="row justify-content-lg-center my-4">
+      <div class="col-auto mb-4"> 
+        <h4>Address</h4>
+        <address>
+          <b>MIT Data to AI Lab</b><br>
+          MIT Stata Center<br>
+          32 Vassar St, Room 32-D712<br>
+          Cambridge, MA 02139
+        </address>
+
+        Email Address <br>
+        <a href="mailto:dailabmit@gmail.com">dailabmit@gmail.com</a>
+      </div>
+      <div class="col-md-6 col-lg-5 offset-lg-1">
+        <div class="embed-responsive embed-responsive-1by1">
+          <iframe 
+            class="embed-responsive-item" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2948.1008950555442!2d-71.09118666425498!3d42.36168899561793!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e370abe1db5703%3A0xd3b042dc26a8b515!2s32+Vassar+St%2C+Cambridge%2C+MA+02139%2C+USA!5e0!3m2!1sen!2sin!4v1482211354142"
+            width="425" height="350" frameborder="0" style="border: 0px;" allowfullscreen=""
+          ></iframe>  
+        </div>     
+      </div>
+    </div>
+  </div>
+</section>

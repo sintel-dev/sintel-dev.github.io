@@ -1,0 +1,15 @@
+- name: MICHAELA HENRY
+  link: "#"
+  image: michaela.jpg
+  title: Program Coordinator
+  info: DAI Lab, MIT
+- name: SKYLAR EISKOWITZ
+  link: "#"
+  image: mit-skylar.png
+  title: MS Student
+  info: DAI Lab, MIT
+- name: ALEX GEIGER
+  link: "#"
+  image: mit-alex.png
+  title: Visiting Student
+  info: DAI Lab, MIT  

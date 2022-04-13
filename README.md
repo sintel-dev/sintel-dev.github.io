@@ -23,4 +23,6 @@ This is the home page for the sintel project at MIT.
 * **For Development** Run `gulp` to bundle assets (js/styles) and generate website into *_site* folder
 * **For Editing** should be using `bundle exec jekyll serve` to run server or *Option with force livereload browser `bundle exec jekyll serve --livereload`*
 
-*Dev Note:* Check gulpfile.js for automated tasks, like `gulp purgecss` to update critical css
+*Dev Note:* 
+- Check gulpfile.js for automated tasks, like `gulp purgecss` to update critical css
+- For local development, change url to localhost in `_config.yml`

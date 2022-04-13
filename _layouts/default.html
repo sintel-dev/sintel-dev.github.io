@@ -10,10 +10,12 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="stylesheet" href="{{'/css/main.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{'/css/prism-default.css' | absolute_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="icon" type="image/png" href="{{'/images/favicon.png' | absolute_url}}"/>
     <link rel="apple-touch-icon" href="{{'/images/favicon.png' | absolute_url}}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/toolbar/prism-toolbar.min.css" integrity="sha512-Dqf5696xtofgH089BgZJo2lSWTvev4GFo+gA2o4GullFY65rzQVQLQVlzLvYwTo0Bb2Gpb6IqwxYWtoMonfdhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       img[src$=".jpg"] {
         image-rendering: -moz-crisp-edges; 
@@ -33,8 +35,11 @@
     {{ content }}
     {% include footer.html %}
 
+    <script src="{{'js/prism.js' | relative_url }}"></script>
     <script src="{{'js/dist/app.bundle.js' | relative_url }}"></script>
     <script src="{{'js/dist/main.bundle.js' | relative_url }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/toolbar/prism-toolbar.min.js" integrity="sha512-YrvgEHAi5/3o2OT+/vh1z19oJXk/Kk0qdVKbjEFl9VRmcLTaWRYzVziZCvoGpJ2TrnV7rB8pnJcz1ioVJjgw2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 
     <script>
       window.addEventListener('load', function(){
@@ -47,6 +52,22 @@
               });
           });
         });
+
+        var copyBts = document.querySelectorAll('btn.copy-to-clipboard-button').forEach(copyBtn => {
+          new ClipboardJS(copyBtn);
+        })
+
+        var clipboard = new ClipboardJS('.copy-to-clipboard-button');
+
+        clipboard.on('success', (e)=> {  
+          console.log(e.trigger);      // use arrow function
+          $(e.trigger).text('Copied');
+          setTimeout(()=> { // use arrow function
+
+            $(e.trigger).html('<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="16" height="16"><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg>')
+          }, 1000);
+        });
+       
       })
       
       // $( document ).ready(function() {        
@@ -56,6 +77,147 @@
       //   });
       // });
     </script>
+
+    <script>
+
+      function showClearFilter(id, value) {
+        var curr = document.getElementById(id)
+        curr.classList.replace('d-none', 'd-inline-block')
+        curr.innerHTML = `${value} <span class="text-danger">&times;</span>`
+      }
+
+      function hideClearFilter(id) {
+        var curr = document.getElementById(id)
+        curr.classList.replace('d-inline-block', 'd-none')
+      }
+
+      function resetTheme() {
+        var themeFilter = document.getElementById('allThemes')
+        themeFilter.value = 'all';
+        filterByThemeProj()
+        document.getElementById('clearTheme').classList.replace('d-inline-block', 'd-none')
+      }
+
+      function filterByThemeProj() {
+        var themeFilter, projectFilter, themeVal, projectVal, wrapper, items, themeItems, projItems, item, i, searchInput, matchesSearch;
+
+        searchInput = document.getElementById('searchInput');
+        filter = searchInput.value.toUpperCase();
+
+        themeFilter = document.getElementById('allThemes')
+        wrapper = document.getElementById("libWarp");
+        items = wrapper.getElementsByClassName('lib-item');
+        themeVal = themeFilter.value
+
+        var readableTheme = themeVal.replace('theme-', '').replace('-', ' ')
+
+        themeItems = (themeVal === 'all') ? wrapper.getElementsByClassName('lib-item') : wrapper.getElementsByClassName(themeVal)    
+
+        var itemsCounter = 0
+        for (i = 0; i < items.length; i++) {
+          if (themeVal === 'all') {
+            hideClearFilter('clearTheme');
+            items[i].style.display = "";
+          } else if (themeVal === 'all') {
+            hideClearFilter('clearTheme');
+            items[i].style.display = "";
+          } else if (themeVal !== 'all') {
+            showClearFilter('clearTheme', readableTheme)
+            if (items[i].classList.contains(themeVal)) {
+              items[i].style.display = "";
+            } else {
+              items[i].style.display = "none";
+              itemsCounter++
+            }
+          } else if (themeVal !== 'all') {
+            showClearFilter('clearTheme', readableTheme)
+            if (items[i].classList.contains(themeVal)) {
+              items[i].style.display = "";
+            } else {
+              items[i].style.display = "none";
+              itemsCounter++
+            }
+          }
+          console.log(itemsCounter)
+        }
+
+        if (itemsCounter >= items.length) {
+          document.getElementById('notFound').classList.replace('d-none', 'd-block')
+        } else {
+          document.getElementById('notFound').classList.replace('d-block', 'd-none')
+        }
+
+        if (filter !== '') {
+          var hiddenItemsCounter = 0
+          for (i = 0; i < items.length; i++) { 
+            item = items[i].querySelector('.lib-name');
+            txtValue = item.textContent || item.innerText;
+            matchesSearch = txtValue.toUpperCase().indexOf(filter) > -1
+            if (matchesSearch && items[i].style.display === '') {
+              items[i].style.display = "";
+            } else {
+              hiddenItemsCounter++
+              items[i].style.display = "none";
+            }
+          }
+          
+          if (hiddenItemsCounter >= items.length) {
+            document.getElementById('notFound').classList.replace('d-none', 'd-block')
+          } else {
+            document.getElementById('notFound').classList.replace('d-block', 'd-none')
+          }
+        } 
+      }
+      
+    </script>
+
+    <script>
+      window.addEventListener("DOMContentLoaded", function () {
+        const githubTopicsItems = Array.prototype.slice.call(
+          document.querySelectorAll(".github-topics")
+        );
+
+        function reqError(err) {
+          console.log("Fetch Error", err);
+        }
+
+        githubTopicsItems.forEach((item, idx) => {
+          const url = `https://api.github.com/repos/${item.dataset.owner}/${item.dataset.repo}/topics`;
+          const currentRequest = new XMLHttpRequest();
+          currentRequest.onload = function () {
+            if (this.status != 200) {
+              console.log(`STATUS ${JSON.stringify(this.status)}`);
+            } else {
+              var data = JSON.parse(this.responseText);
+              const currentTopics = data.names;
+
+              let htmlToAdd = "";
+
+              currentTopics.map((i,idx) => {
+                if (idx <= 2 ) {
+                htmlToAdd += `
+                    <a 
+                      href="https://github.com/topics/${i}" 
+                      class="d-inline-block badge-pill bg-lightblue text-primary topic-link mb-1">
+                    ${i}</a>
+                  `;
+                }
+              });
+
+              item.innerHTML = htmlToAdd;
+            }
+          };
+          currentRequest.onerror = reqError;
+          currentRequest.open("get", url, true);
+          currentRequest.setRequestHeader(
+            "Accept",
+            "application/vnd.github.mercy-preview+json"
+          );
+          currentRequest.send();
+        });
+      });
+    </script>
+
     
   </body>
 </html>

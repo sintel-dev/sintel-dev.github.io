@@ -1,0 +1,127 @@
+<section class="py-3 bg-light position-relative" id="">
+  <span class="anchor" id="opensource"></span>
+  <div class="container">
+    {% include heading.html title="Open Source" subtitle="Sintel is an ecosystem for time series processing, labeling, 
+    modeling, benchmarking, and user interactions. Explore the ecosystem of open source libraries supporting the Sintel.
+    Each can be used as a standalone package for particular needs." classname="text-center" %}
+  </div>
+
+{% assign libs = site.data.open-sources-libs %}
+{% assign allThemes = '' %}
+{% assign allProjects = '' %}
+{% for item in libs %}
+{% assign item_themes = item.Theme | split: ", "%}
+{% assign item_projects = item.Project | split: ", "%}
+  {% for theme in item_themes %}
+    {% capture currentTheme%}{{ theme | strip | replace: ' ', '-' }}, {% endcapture %}
+    {% assign allThemes = allThemes | append: currentTheme %}
+  {% endfor %}
+
+  {% for project in item_projects %}
+    {% capture currentProject%}{{ project | strip | replace: ' ', '-' }}, {% endcapture %}
+    {% assign allProjects = allProjects | append: currentProject %}
+  {% endfor %}
+{% endfor %} 
+
+<link rel="stylesheet" href="{{'/css/main.css' | absolute_url }}">
+
+  <div class="pb-5 pb-xxl-8 lib-wrap">
+    <div class="container" style="max-width: 1010px">
+      <div class="row justify-content-start mb-3 filter-bar pt-md-7 pt-5">
+        <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <div class="input-group-text bg-secondary text-white pr-3">
+                <img src="{{'/img/search.svg' | absolute_url }}" width="14" height="14" alt="">
+              </div>
+            </div>
+            <input 
+              id="searchInput"
+              class="form-control search-input bg-secondary text-white" 
+              type="search" 
+              placeholder="Search by name..." 
+              aria-label="Search"
+              oninput="filterByThemeProj()"
+              >
+          </div>
+          
+        </div>
+        <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item">
+          <!-- <label for="disabledSelect" class="form-label">Disabled select menu</label> -->
+        <select id="allThemes" data-current="all"
+          onchange="filterByThemeProj()"
+          class="custom-select bg-secondary text-white form-control ">
+          <option value="all">All Themes</option>
+          
+          {% assign uniqueThemes = allThemes | split: ', ' | uniq %}
+          {% for item in uniqueThemes %} 
+            <option value="theme-{{item}}">{{item | replace: '-', ' ' | capitalize}}</option>
+          {% endfor %}
+        </select>
+          <button id="clearTheme" type="button" class="d-none mt-2 badge-pill btn btn-secondary text-white btn-sm rounded-full" onclick="resetTheme()">
+            Time series <span class="text-danger">&times;</span>
+          </button>
+        </div>
+      </div>
+      
+      <div class="row justify-content-center justify-content-lg-start" id="libWarp">
+        {% assign libs = site.data.open-sources-libs | sort_natural: "Library_name" %}
+        {% for item in libs %}
+        {% assign item_themes = item.Theme | split: ","%}
+        {% assign item_projects = item.Project | split: ","%}
+        {% assign currentThemes = '' %}
+        {% assign currentProjects = '' %}
+          {% for theme in item_themes %}
+            {% capture currentTheme%}theme-{{ theme | strip | replace: ' ', '-' }} {% endcapture %}
+            {% assign currentThemes = currentThemes | append: currentTheme %}
+          {% endfor %}
+
+          {% for project in item_projects %}
+            {% capture currentProject%}project-{{ project | strip | replace: ' ', '-' }} {% endcapture %}
+            {% assign currentProjects = currentProjects | append: currentProject %}
+          {% endfor %}
+
+          <div class="col-lg-4 col-md-6 mb-3 mb-md-4 lib-item {{currentThemes}} {{currentProjects}}">
+            <div class="card h-100 rounded-0 card-shadow">
+              <div class="card-body pb-0 px-4 pt-4">
+                <a href="{{ item.Github_Link }}" class="hoverable-i text-secondary">
+                  <img src="img/{{ item.image_name }}.svg" alt="{{ item.Library_name }}" style="width: 28px; height: 28px;">                
+                  <p class="text-20 mt-3 mb-4 font-weight-normal lib-name">{{ item.Library_name }}</p>
+                </a>
+                <p class="font-weight-light text-14 mb-2 github-desc">{{ item.Text_in_it }}</p>
+                
+              </div>
+              
+              <div class="card-footer border-0 bg-transparent pt-0 px-4">
+                <!-- <p class="github-topics text-10 mb-2" style="min-height: 50px;" data-owner="{{ item.github_owner }}" data-repo="{{ item.github_repo }}"></p> -->
+                <p class="mt-2 mb-2">
+                  <a href="{{ item.Github_Link }}" class="mr-3 hoverable-i">
+                    <img width="17" height="17" src="{{'/img/Github.svg' | relative_url }}" alt="{{ item.Library_name }} Github repository">
+                  </a>
+                  {% if item.docs_link != '' %}
+                  <a href="{{ item.docs_link }}" class="mr-3 hoverable-i">
+                    <img width="17" height="17" src="{{'/img/Docs.svg' | relative_url }}" alt="{{ item.Library_name }} Documentation">
+                  </a>
+                  {% endif %}
+                  {% if item.slack_link != '' %}
+                  <a href="{{ item.slack_link }}" class="mr-3 hoverable-i">
+                    <img width="17" height="17" src="{{'/img/Slack.svg' | relative_url }}" alt="{{ item.Library_name }} Documentation">
+                  </a>
+                  {% endif %}
+                </p>
+              </div>
+              
+            </div>
+          </div>
+          {% endfor %}
+      </div>
+      <div class="row justify-content-center d-none" id="notFound">
+        <p class="text-center bold">
+          No results found
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
