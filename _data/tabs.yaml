@@ -4,7 +4,7 @@
   subtitle: Featurize time series with domain knowledge encoded for machine learning uses.
   image: /images/tabs/img/forcasting_example.png
   icon: /images/tabs/sigpro.svg
-  code: >- 
+  code: |+ 
     from sigpro import SigPro
     from sigpro.demo import (
       get_amplitude_demo,
@@ -15,10 +15,13 @@
 
     trans, aggre = load_demo_primitives()
 
-    pipeline = SigPro(transformations=trans,
-                      aggregations=aggre,
-                      keep_columns=True)
-    pipeline.process_signal(data)[0]
+    sigpro = SigPro(
+      transformations=trans,
+      aggregations=aggre,
+      keep_columns=True
+    )
+    
+    sigpro.process_signal(data)
 
   output: /images/tabs/img/sigpro-output.png
 - title: Forecasting
@@ -27,72 +30,73 @@
   subtitle: Predict future values by analyzing past trends.
   image: /images/tabs/img/forcasting_example.png
   icon: /images/tabs/pyteller.svg
-  code: >-
+  code: |+
     from pyteller.data import load_data
     from pyteller.core import Pyteller
 
     train_data = load_data(
       'pyteller/data/AL_Weather_current.csv')
+    test_data = load_data(
+      'pyteller/data/AL_Weather_input.csv')
 
-    pipeline = (
-      'pyteller/pipelines/sandbox/LSTM/LSTM_offset.json')
-
-    pyteller = Pyteller(pipeline=pipeline,
+    pyteller = Pyteller(
+      pipeline=('pyteller/pipelines/sandbox/'
+                'LSTM/LSTM_offset.json'),
       pred_length=6, offset=1)
 
-    pyteller.fit(data=train_data,
+    pyteller.fit(
+      data=train_data,
       timestamp_col='valid', target_signal='tmpf',
       entity_col='station', entities='8A0')
-
-    test_data=load_data('pyteller/data/AL_Weather_input.csv')
-    y, y_hat = pyteller.forecast(data=test_data)
-    y_hat.head(5)
+    
+    pyteller.forecast(data=test_data)
 
   output: /images/tabs/img/forecasting-output.png
 - title: Anomaly Detection
   name: orion
   slug: sintel-dev/Orion
-  subtitle: Identify anomalous segments (rare patterns).
+  subtitle: Identify anomalous time series segments.
   image: /images/tabs/img/anomaly_detection_example.png
   icon: /images/tabs/orion.svg
-  code: >- 
+  code: |+ 
     from orion.data import load_signal
     from orion import Orion
 
     train_data = load_signal('S-1-train')
 
-    orion = Orion(
-        pipeline='lstm_dynamic_threshold'
-    )
+    orion = Orion(pipeline='lstm_dynamic_threshold')
 
     orion.fit(train_data)
 
     new_data = load_signal('S-1-new')
+    
     orion.detect(new_data)
 
   output: /images/tabs/img/anomaly-output.png
 - title: Classification
   name: draco_c
   slug: sintel-dev/Orion
-  subtitle: Classify a segment of time series into a certain category.
+  subtitle: Classify time series segments into particular categories.
   image: /images/tabs/img/classification_example.png
   icon: /images/tabs/orion.svg
-  code: >- 
+  code: |+ 
     from draco.demo import load_demo
     from draco.pipeline import DracoPipeline
     from sklearn.model_selection import train_test_split
 
     target_times, readings = load_demo()
+
     train, test = train_test_split(
       target_times, test_size=0.25, random_state=0)
+    
     test_targets = test.pop('target')
 
-    pipeline = DracoPipeline(
+    draco = DracoPipeline(
       'classes.normalize_dfs_xgb_classifier')
-    pipeline.fit(train, readings)
-    pipeline.predict(test, readings)
-
-    list(zip(test_targets, preds))[:5]
+    
+    draco.fit(train, readings)
+    
+    draco.predict(test, readings)
 
   output: /images/tabs/img/classification-output.png
 - title: Benchmarking
@@ -101,7 +105,7 @@
   subtitle: Benchmark machine learning models for different tasks.
   image: /images/tabs/img/anomaly_detection_example.png
   icon: /images/tabs/orion.svg
-  code: >-
+  code: |+
     from orion.benchmark import benchmark
 
     pipelines = [
@@ -113,13 +117,17 @@
 
     metrics = ['f1', 'accuracy', 'recall', 'precision']
 
-    benchmark(pipelines=pipelines, 
-      datasets=signals, metrics=metrics, rank='f1')
+    benchmark(
+      pipelines=pipelines,
+      datasets=signals,
+      metrics=metrics,
+      rank='f1'
+    )
   output: /images/tabs/img/benchmark-output.png
 - title: Data Visualization
   name: mtv
   slug: sintel-dev/MTV
-  subtitle: Use a suite of visualization components to support human-in-the-loop analysis workflow.
+  subtitle: Use a suite of visualization techniques to support complex analytic workflow with human-in-the-loop
   image: /images/tabs/img/visualization.png
   icon: /images/tabs/mtv.svg
   code:

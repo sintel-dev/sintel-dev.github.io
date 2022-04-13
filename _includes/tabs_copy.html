@@ -61,10 +61,17 @@
                 <button class="copy-to-clipboard-button bg-transparent border-0 text-white" data-clipboard-target="#code-{{item.name}}">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="16" height="16"><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg>
                 </button>
-                <span class="text-dark bg-white text-sm py-1 px-2 rounded text-uppercase small mr-1">Code</span></p>
+                <span class="text-dark bg-white text-sm py-1 px-2 rounded text-uppercase small mr-1">Input</span></p>
               
               <textarea class="position-absolute" id="code-{{item.name}}" style="z-index: -1; right: 10px; top: 5px; width: 0px; height: 0px">{{item.code}}</textarea>
-              <pre><code class="language-python">{{item.code}}</code></pre>
+              <pre style="padding-top: 0"><code class="language-python">{{item.code}}</code></pre>
+              <div class="px-1 pb-1">
+                <div class="bg-white rounded-top pt-1">
+                  <p class="mb-0 text-right"><span class="text-white bg-code text-sm py-1 px-2 rounded text-uppercase small mr-1">Output</span></p>
+                  <img class="p-2 w-100" style="object-fit: contain; object-position: center;"
+                    src="{{ item.output }}">
+                </div>
+              </div>
             </div>
           </div>
           {% elsif item.code == null %}
@@ -83,10 +90,17 @@
                 <button class="copy-to-clipboard-button bg-transparent border-0 text-white" data-clipboard-target="#code-{{item.name}}">
                   <svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="16" height="16"><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg>
                 </button>
-                <span class="text-dark bg-white text-sm py-1 px-2 rounded text-uppercase small mr-1">Code</span></p>
+                <span class="text-dark bg-white text-sm py-1 px-2 rounded text-uppercase small mr-1">Input</span></p>
               
               <textarea class="position-absolute" id="code-{{item.name}}" style="z-index: -1; right: 10px; top: 5px; width: 0px; height: 0px">{{item.code}}</textarea>
-              <pre><code class="language-python">{{item.code}}</code></pre>
+              <pre style="padding-top: 0"><code class="language-python">{{item.code}}</code></pre>
+              <div class="px-1 pb-1">
+                <div class="bg-white rounded-top pt-1">
+                  <p class="mb-0 text-right"><span class="text-white bg-code text-sm py-1 px-2 rounded text-uppercase small mr-1">Output</span></p>
+                  <img class="p-2 w-100" style="object-fit: contain; object-position: center;"
+                    src="{{ item.output }}">
+                </div>
+              </div>
             </div>
           </div>
           {% endif %}
