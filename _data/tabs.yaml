@@ -2,8 +2,8 @@
   name: sigpro
   slug: sintel-dev/SigPro
   subtitle: Featurize time series with domain knowledge encoded for machine learning uses.
-  image: /images/tabs/img/forcasting_example.png
-  icon: /images/tabs/sigpro.svg
+  image: 
+  icon: /img/SigPro.svg
   code: |+ 
     from sigpro import SigPro
     from sigpro.demo import (
@@ -28,8 +28,8 @@
   name: pyteller
   slug: sintel-dev/sintel
   subtitle: Predict future values by analyzing past trends.
-  image: /images/tabs/img/forcasting_example.png
-  icon: /images/tabs/pyteller.svg
+  image:
+  icon: /img/pyteller.svg
   code: |+
     from pyteller.data import load_data
     from pyteller.core import Pyteller
@@ -56,8 +56,8 @@
   name: orion
   slug: sintel-dev/Orion
   subtitle: Identify anomalous time series segments.
-  image: /images/tabs/img/anomaly_detection_example.png
-  icon: /images/tabs/orion.svg
+  image:
+  icon: /img/Orion.svg
   code: |+ 
     from orion.data import load_signal
     from orion import Orion
@@ -77,8 +77,8 @@
   name: draco_c
   slug: sintel-dev/Orion
   subtitle: Classify time series segments into particular categories.
-  image: /images/tabs/img/classification_example.png
-  icon: /images/tabs/orion.svg
+  image:
+  icon: /img/Draco.svg
   code: |+ 
     from draco.demo import load_demo
     from draco.pipeline import DracoPipeline
@@ -104,7 +104,7 @@
   slug: sintel-dev/Orion
   subtitle: Benchmark machine learning models for different tasks.
   image: /images/tabs/img/anomaly_detection_example.png
-  icon: /images/tabs/orion.svg
+  icon: /img/TSGym.svg
   code: |+
     from orion.benchmark import benchmark
 
@@ -129,6 +129,6 @@
   slug: sintel-dev/MTV
   subtitle: Use a suite of visualization techniques to support complex analytic workflow with human-in-the-loop
   image: /images/tabs/img/visualization.png
-  icon: /images/tabs/mtv.svg
+  icon: /img/MTV.svg
   code:
   output: /

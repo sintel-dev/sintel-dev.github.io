@@ -85,7 +85,7 @@
             <div class="card h-100 rounded-0 card-shadow">
               <div class="card-body pb-0 px-4 pt-4">
                 <a href="{{ item.Github_Link }}" class="hoverable-i text-secondary">
-                  <img src="img/{{ item.image_name }}.svg" alt="{{ item.Library_name }}" style="width: 40px; height: 40px;">                
+                  <img src="img/{{ item.image_name }}.svg" alt="{{ item.Library_name }}" style="width: 28px; height: 28px;">                
                   <p class="text-20 mt-3 mb-4 font-weight-normal lib-name">{{ item.Library_name }}</p>
                 </a>
                 <p class="font-weight-light text-14 mb-2 github-desc">{{ item.Text_in_it }}</p>
@@ -93,10 +93,8 @@
               </div>
               
               <div class="card-footer border-0 bg-transparent pt-0 px-4">
-                <p class="github-topics text-10 mb-2" style="min-height: 50px;" data-owner="{{ item.github_owner }}" data-repo="{{ item.github_repo }}">
-                  
-                </p>
-                <p class="mb-2">
+                <!-- <p class="github-topics text-10 mb-2" style="min-height: 50px;" data-owner="{{ item.github_owner }}" data-repo="{{ item.github_repo }}"></p> -->
+                <p class="mt-2 mb-2">
                   <a href="{{ item.Github_Link }}" class="mr-3 hoverable-i">
                     <img width="17" height="17" src="{{'/img/Github.svg' | relative_url }}" alt="{{ item.Library_name }} Github repository">
                   </a>
