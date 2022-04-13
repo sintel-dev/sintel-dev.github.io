@@ -4,3 +4,4 @@ bootstrap-vars.scss
 .DS_Store
 vendor/
 *.lock
+.vscode
