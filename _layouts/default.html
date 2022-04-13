@@ -10,10 +10,12 @@
     <meta name="description" content="{% if page.description %}{{ page.description }}{% else %}{{ site.description }}{% endif %}">
 
     <link rel="stylesheet" href="{{'/css/main.css' | absolute_url }}">
+    <link rel="stylesheet" href="{{'/css/prism-default.css' | absolute_url }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="icon" type="image/png" href="{{'/images/favicon.png' | absolute_url}}"/>
     <link rel="apple-touch-icon" href="{{'/images/favicon.png' | absolute_url}}">
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/toolbar/prism-toolbar.min.css" integrity="sha512-Dqf5696xtofgH089BgZJo2lSWTvev4GFo+gA2o4GullFY65rzQVQLQVlzLvYwTo0Bb2Gpb6IqwxYWtoMonfdhQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
       img[src$=".jpg"] {
         image-rendering: -moz-crisp-edges; 
@@ -33,8 +35,11 @@
     {{ content }}
     {% include footer.html %}
 
+    <script src="{{'js/prism.js' | relative_url }}"></script>
     <script src="{{'js/dist/app.bundle.js' | relative_url }}"></script>
     <script src="{{'js/dist/main.bundle.js' | relative_url }}"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.27.0/plugins/toolbar/prism-toolbar.min.js" integrity="sha512-YrvgEHAi5/3o2OT+/vh1z19oJXk/Kk0qdVKbjEFl9VRmcLTaWRYzVziZCvoGpJ2TrnV7rB8pnJcz1ioVJjgw2A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2.0.10/dist/clipboard.min.js"></script>
 
     <script>
       window.addEventListener('load', function(){
@@ -47,6 +52,22 @@
               });
           });
         });
+
+        var copyBts = document.querySelectorAll('btn.copy-to-clipboard-button').forEach(copyBtn => {
+          new ClipboardJS(copyBtn);
+        })
+
+        var clipboard = new ClipboardJS('.copy-to-clipboard-button');
+
+        clipboard.on('success', (e)=> {  
+          console.log(e.trigger);      // use arrow function
+          $(e.trigger).text('Copied');
+          setTimeout(()=> { // use arrow function
+
+            $(e.trigger).html('<svg xmlns="http://www.w3.org/2000/svg" fill="white" viewBox="0 0 448 512" width="16" height="16"><path d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"/></svg>')
+          }, 1000);
+        });
+       
       })
       
       // $( document ).ready(function() {        
