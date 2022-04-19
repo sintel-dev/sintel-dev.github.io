@@ -1,23 +1,13 @@
 - title: >-
     Sintel: A Machine Learning Framework to Extract Insights from Signals
   subtitle: >-
-    Sarah Alnegheimish, Dongyu Liu, Carles Sala, Laure Berti-Equille, Kalyan Veeramachaneni
+    Sarah Alnegheimish, Dongyu Liu, Carles Sala, Laure Berti-Équille, Kalyan Veeramachaneni
   tag: SIGMOD
-  tag_text: International Conference on Management of Data, 2022
+  tag_text: ACM SIGMOD/PODS International Conference on Management of Data, 2022
   image: /images/publications/sintel.png
   links: 
-    - name: "pdf"
-      url: ""
-    - name: "talk"
-      url: ""
     - name: "code"
-      url: ""
-    - name: "media"
-      url: ""
-    - name: "blog"
-      url: ""
-    - name: "bib"
-      url: ""
+      url: "https://github.com/sintel-dev"
 - title: >-
     MTV: Visual Analytics for Detecting, Investigating, and Annotating Anomalies in Multivariate Time Series
   subtitle: >-
@@ -27,17 +17,14 @@
   image: /images/publications/mtv.png
   links: 
     - name: "pdf"
-      url: ""
-    - name: "talk"
-      url: ""
-    - name: "code"
-      url: ""
-    - name: "media"
-      url: ""
-    - name: "blog"
-      url: ""
+      url: "https://dl.acm.org/doi/pdf/10.1145/3512950"
     - name: "bib"
-      url: ""
+      url: "http://dongyu.tech/resource/bib/mtv_2021_cscw.html"
+    - name: "code"
+      url: "https://github.com/sintel-dev/MTV"
+    - name: "video"
+      url: "https://dai.lids.mit.edu/wp-content/uploads/2022/04/cscw-mtv.mp4"
+
 - title: >-
     TadGAN: Time Series Anomaly Detection Using Generative Adversarial Networks
   subtitle: >-
@@ -45,20 +32,20 @@
   tag: BigData
   tag_text: IEEE International Conference on BigData, 2020
   image: /images/publications/tadgan.svg
-  cta_text: GitHub stars > 450
-  cta_url: "https://ieeexplore.ieee.org/abstract/document/9552849"
+  cta_text: GitHub stars > 600
+  cta_url: "https://github.com/sintel-dev/Orion"
   links: 
     - name: "pdf"
-      url: ""
-    - name: "talk"
-      url: ""
-    - name: "code"
-      url: ""
-    - name: "media"
-      url: ""
-    - name: "blog"
-      url: ""
+      url: "http://dongyu.tech/resource/paper/tadgan_2020_ieeebigdata.pdf"
     - name: "bib"
-      url: ""
+      url: "http://dongyu.tech/resource/bib/tadgan_2020_ieeebigdata.html"
+    - name: "talk"
+      url: "https://www.youtube.com/watch?v=jIDj2dhU99k"
+    - name: "code"
+      url: "https://github.com/sintel-dev/Orion"
+    - name: "news"
+      url: "https://news.mit.edu/2020/warning-time-measurements-ai-1217"
+    - name: "blog"
+      url: "https://medium.com/mit-data-to-ai-lab/time-series-anomaly-detection-in-the-era-of-deep-learning-f0237902224a"
 
 
