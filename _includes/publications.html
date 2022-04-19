@@ -23,11 +23,11 @@
               <p class=" mb-1">
                 Download: 
                 {% for link in item.links %}
-                  <a href="{{ link.cta_url }}">[{{ link.name }}]</a>
+                  <a href="{{ link.url }}" target="_blank">[{{ link.name }}]</a>
                 {% endfor %}
                 {% if item.cta_url != null and item.cta_text != null%}
                 | 🏆
-                <a href="{{ item.cta_url }}" class="text-warning">{{ item.cta_text }}</a>
+                <a href="{{ item.cta_url }}" target="_blank" class="text-warning">{{ item.cta_text }}</a>
                 {% endif %}
               </p>
             </div>

@@ -1,5 +1,5 @@
-- title: Spacecraft
-  subtitle: Monitor spacecraft telemetry and solve an unsupervised time series anomaly detection problem.
+- title: Satellite
+  subtitle: Monitor satellite telemetry and solve an unsupervised time series anomaly detection problem.
   image: /images/use-cases/rocket.svg
   cta_text: 
   cta_url: "https://medium.com/@dailabmit"
