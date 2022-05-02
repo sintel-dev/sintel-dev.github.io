@@ -6,6 +6,10 @@
   tag_text: ACM SIGMOD/PODS International Conference on Management of Data, 2022
   image: /images/publications/sintel.png
   links: 
+    - name: "pdf"
+      url: "https://arxiv.org/pdf/2204.09108.pdf",
+    - name: "bib"
+      url: "#"
     - name: "code"
       url: "https://github.com/sintel-dev"
 - title: >-
