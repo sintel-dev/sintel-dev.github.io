@@ -1,17 +1,17 @@
 - name: Dongyu Liu
-  link: ""
+  link: "http://dongyu.tech/"
   image: dongyu.jpeg
   title: Postdoc (Project Lead)
+  info: DAI Lab, MIT
+- name: Sarah Alnegheimish
+  link: ""
+  image: mit-sarah.png
+  title: MS Student (Project Co-Lead)
   info: DAI Lab, MIT
 - name: Kalyan Veeramachaneni
   link: ""
   image: kalyan.jpeg
   title: Principal Investigator
-  info: DAI Lab, MIT
-- name: Sarah Alnegheimish
-  link: ""
-  image: mit-sarah.png
-  title: MS Student
   info: DAI Lab, MIT
 - name: Frances Hartwell
   link: ""
