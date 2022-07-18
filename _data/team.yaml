@@ -20,7 +20,7 @@
   info: DAI Lab, MIT
 - name: Lawrence Wong
   link: ""
-  image: lawrence.png
+  image: lawrence-min.png
   title: MS Student
   info: DAI Lab, MIT
 - name: Hugo Ramirez
@@ -33,16 +33,19 @@
   image: laure.jpeg
   title: Visiting Professor
   info: DAI Lab, MIT
+- name: Avi Shah
+  link: ""
+  image: avi.png
+  title: Visiting UG Student
+  info: DAI Lab, MIT
 - name: Plamen Valentinov Kolev
   link: ""
   image: mit-plamen.png
   title: Software Engineer
-  info: DAI Lab, MIT
 - name: Carles Sala
   link: ""
   image: mit-carles.png
   title: Software Engineer
-  info: DAI Lab, MIT
 - name: Sergiu Ojoc
   link: ""
   image: sergiu.png
