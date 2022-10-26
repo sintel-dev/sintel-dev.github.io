@@ -1,4 +1,18 @@
 - title: >-
+    Time Series Anomaly Detection using Prediction-Reconstruction Mixture Errors
+  subtitle: >-
+    Lawrence Wong, Dongyu Liu, Laure Berti-Equille, Kalyan Veeramachaneni
+  tag: BigData
+  tag_text: IEEE International Conference on BigData, 2022. (to appear)
+  image: /images/publications/2022_aer_bigdata.png
+  links: 
+    - name: "pdf"
+      url: "#"
+    - name: "bib"
+      url: "#"
+    - name: "code"
+      url: "#"
+- title: >-
     Sintel: A Machine Learning Framework to Extract Insights from Signals
   subtitle: >-
     Sarah Alnegheimish, Dongyu Liu, Carles Sala, Laure Berti-Équille, Kalyan Veeramachaneni
