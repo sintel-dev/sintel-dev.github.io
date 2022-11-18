@@ -1,7 +1,7 @@
 - title: >-
-    Time Series Anomaly Detection using Prediction-Reconstruction Mixture Errors
+    AER: Auto-Encoder with Regression for Time Series Anomaly Detection
   subtitle: >-
-    Lawrence Wong, Dongyu Liu, Laure Berti-Equille, Kalyan Veeramachaneni
+    Lawrence Wong, Dongyu Liu, Laure Berti-Equille, Sarah Alnegheimish, Kalyan Veeramachaneni
   tag: BigData
   tag_text: IEEE International Conference on BigData, 2022. (to appear)
   image: /images/publications/2022_aer_bigdata.png
