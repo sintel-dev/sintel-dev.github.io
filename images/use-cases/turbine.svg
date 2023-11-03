@@ -9,25 +9,23 @@
         <g id="Layer-1" serif:id="Layer 1">
         </g>
         <g id="Layer-2" serif:id="Layer 2" transform="matrix(8.33333,0,0,8.33333,0,0)">
-            <g opacity="0.05">
+            <g>
                 <g transform="matrix(1,0,0,-1,-0.001,1645.37)">
-                    <rect x="0.001" y="808.746" width="686.862" height="195.006" style="fill:rgb(33,77,85);"/>
+                    <rect x="0.001" y="808.746" width="686.862" height="195.006" style="fill:none"/>
                 </g>
             </g>
-            <g transform="matrix(0.12,-0,-0,0.12,334.44,719.4)">
-                <use xlink:href="#_Image1" x="0" y="0" width="162px" height="162px"/>
-            </g>
+         
             <g transform="matrix(-1,0,0,1,691.999,-125.034)">
-                <rect x="285.531" y="828.375" width="120.937" height="113.654" style="fill:white;"/>
+                <rect x="285.531" y="828.375" width="120.937" height="113.654" style="fill:none;"/>
             </g>
             <g transform="matrix(1,0,0,1,340.681,732.802)">
-                <path d="M0,1.828C-1.863,3.23 -3.14,3.569 -3.425,3.487C-3.424,3.19 -2.747,2.058 -0.883,0.655C0.981,-0.747 2.256,-1.085 2.542,-1.003C2.541,-0.706 1.863,0.426 0,1.828M-1.375,0.001C-2.291,0.689 -3.081,1.439 -3.6,2.112C-4.237,2.939 -4.402,3.57 -4.089,3.986C-3.926,4.203 -3.671,4.311 -3.327,4.311C-3.011,4.311 -2.618,4.22 -2.152,4.035C-1.362,3.724 -0.423,3.172 0.492,2.483C1.848,1.464 3.943,-0.523 3.206,-1.503C2.47,-2.483 -0.021,-1.019 -1.375,0.001" style="fill:rgb(3,4,5);fill-rule:nonzero;"/>
+                <path d="M0,1.828C-1.863,3.23 -3.14,3.569 -3.425,3.487C-3.424,3.19 -2.747,2.058 -0.883,0.655C0.981,-0.747 2.256,-1.085 2.542,-1.003C2.541,-0.706 1.863,0.426 0,1.828M-1.375,0.001C-2.291,0.689 -3.081,1.439 -3.6,2.112C-4.237,2.939 -4.402,3.57 -4.089,3.986C-3.926,4.203 -3.671,4.311 -3.327,4.311C-3.011,4.311 -2.618,4.22 -2.152,4.035C-1.362,3.724 -0.423,3.172 0.492,2.483C1.848,1.464 3.943,-0.523 3.206,-1.503C2.47,-2.483 -0.021,-1.019 -1.375,0.001" style="fill:white;fill-rule:nonzero;"/>
             </g>
             <g transform="matrix(1,0,0,1,348.109,733.368)">
-                <path d="M0,1.24C-1.792,-0.253 -2.413,-1.417 -2.399,-1.714C-2.107,-1.781 -0.853,-1.38 0.939,0.112C2.731,1.605 3.352,2.77 3.338,3.066C3.051,3.133 1.792,2.734 0,1.24M3.58,1.702C3.096,1.005 2.344,0.217 1.464,-0.517C0.583,-1.25 -0.327,-1.848 -1.101,-2.198C-2.053,-2.63 -2.704,-2.646 -3.037,-2.245C-3.371,-1.845 -3.238,-1.207 -2.642,-0.349C-2.157,0.348 -1.405,1.136 -0.525,1.87C0.499,2.723 2.21,3.886 3.276,3.886C3.566,3.886 3.809,3.8 3.976,3.598C4.311,3.198 4.177,2.559 3.58,1.702" style="fill:rgb(3,4,5);fill-rule:nonzero;"/>
+                <path d="M0,1.24C-1.792,-0.253 -2.413,-1.417 -2.399,-1.714C-2.107,-1.781 -0.853,-1.38 0.939,0.112C2.731,1.605 3.352,2.77 3.338,3.066C3.051,3.133 1.792,2.734 0,1.24M3.58,1.702C3.096,1.005 2.344,0.217 1.464,-0.517C0.583,-1.25 -0.327,-1.848 -1.101,-2.198C-2.053,-2.63 -2.704,-2.646 -3.037,-2.245C-3.371,-1.845 -3.238,-1.207 -2.642,-0.349C-2.157,0.348 -1.405,1.136 -0.525,1.87C0.499,2.723 2.21,3.886 3.276,3.886C3.566,3.886 3.809,3.8 3.976,3.598C4.311,3.198 4.177,2.559 3.58,1.702" style="fill:white;fill-rule:nonzero;"/>
             </g>
             <g transform="matrix(1,0,0,1,344.447,722.11)">
-                <path d="M0,7.468C-0.236,7.289 -0.733,6.067 -0.733,3.734C-0.733,1.402 -0.236,0.18 0,-0C0.237,0.18 0.734,1.402 0.734,3.734C0.734,6.067 0.237,7.289 0,7.468M1.554,3.734C1.554,2.038 1.227,-0.831 0,-0.831C-1.226,-0.831 -1.553,2.038 -1.553,3.734C-1.553,5.43 -1.226,8.299 0,8.299C1.227,8.299 1.554,5.43 1.554,3.734" style="fill:rgb(3,4,5);fill-rule:nonzero;"/>
+                <path d="M0,7.468C-0.236,7.289 -0.733,6.067 -0.733,3.734C-0.733,1.402 -0.236,0.18 0,-0C0.237,0.18 0.734,1.402 0.734,3.734C0.734,6.067 0.237,7.289 0,7.468M1.554,3.734C1.554,2.038 1.227,-0.831 0,-0.831C-1.226,-0.831 -1.553,2.038 -1.553,3.734C-1.553,5.43 -1.226,8.299 0,8.299C1.227,8.299 1.554,5.43 1.554,3.734" style="fill:white;fill-rule:nonzero;"/>
             </g>
         </g>
         <g id="Layer-7" serif:id="Layer 7">
@@ -35,7 +33,5 @@
         <g id="Layer-9" serif:id="Layer 9">
         </g>
     </g>
-    <defs>
-        <image id="_Image1" width="162px" height="162px" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKIAAACiCAYAAADC8hYbAAAACXBIWXMAAA7EAAAOxAGVKw4bAAAByklEQVR4nO3SQREAIRDAsOX8W2SQwsmgj0RBH137nDvw2Pc6AGaMSIQRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBKMSIIRSTAiCUYkwYgkGJEEI5JgRBJ+ATkE3oGP+5AAAAAASUVORK5CYII="/>
-    </defs>
+
 </svg>

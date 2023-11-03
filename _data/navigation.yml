@@ -1,4 +1,8 @@
 items:
+  - title: Resources
+    url: "/resources/"
+  - title: Team
+    url: "/team/"
   - title: GitHub
     url: "https://github.com/sintel-dev"
   - title: Blog

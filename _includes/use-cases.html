@@ -1,14 +1,15 @@
-<section class="py-5 position-relative bg-light">
+<section class="py-5 position-relative text-white bg-navy-blue">
   <span class="anchor" id="use-cases"></span>
   <div class="container">
     {% include heading.html classname="text-center" title="Use Cases" subtitle="Sintel have been demonstrated in the following application domains." %}
     <div class="row justify-content-center my-4">
       {% for item in site.data.use-cases %}
-        <div class="col-lg-auto col-sm-6 mb-4 mb-lg-0" style="max-width: 320px;">
-          <div class="bg-white shadow-sm px-4 py-3">
-            <img class="mx-auto d-block" style="width: 36px;" src="{{ item.image }}" alt="{{ item.title }}" />
-            <p class="px-2 font-weight-bold h5 text-secondary text-center mb-4">{{ item.title }}</p>
-            <p class="px-2 text-secondary fs-sm" style="min-height: 82px;">{{ item.subtitle }}</p>
+        <div class="col-lg-auto col-sm-6 mb-4 mb-lg-0" style="max-width: 280px;">
+          <div class="bg-navy-green shadow-sm px-4 py-3 rounded-lg">
+            <img class="mx-auto d-block mb-2" style="width: 36px;" src="{{ item.image }}" alt="{{ item.title }}" />
+            <p class="px-2 font-weight-bold h5 text-center mb-3">{{ item.title }}</p>
+            <div class="bg-white mx-2 mb-3" style="height: 1px;"></div>
+            <p class="px-2 fs-sm" style="min-height: 82px;">{{ item.subtitle }}</p>
             <p class="px-2  text-center fs-sm">
               <a href="{{ item.cta_url }}" class="text-info font-weight-bold">{{ item.cta_text }}</a>
             </p>

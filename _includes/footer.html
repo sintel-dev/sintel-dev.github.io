@@ -1,4 +1,29 @@
-<section class="bg-primary text-white text-center footer d-flex flex-column justify-content-center py-3 py-lg-0">
+{% include orline.html %}
+<section class="hero-wrap text-white text-center footer d-flex flex-column justify-content-center py-5">
+  <div class="container mb-5">
+    <div class="row justify-content-between">
+      <div class="col-auto">
+        <a href="{{ site.baseurl }}/" class="navbar-brand text-white d-flex align-items-center">
+          <img src="{{'images/sintel-logo.svg' | relative_url }}" width="40" class="d-inline-block align-top logo" alt="Sibyl logo" loading="lazy">
+          <span style="font-size: 36px; font-weight: bold; line-height: 1; margin-bottom: 4px; margin-left: 4px;">sintel</span>
+        </a>
+      </div>
+      
+      <div class="col-auto mt-3">
+        <div class="row">
+          <div class="col-auto">
+            <p><a class="text-uppercase text-white font-weight-bold" href="/resources/">Resources</a></p>
+
+          </div>
+          <div class="col-auto">
+            <p><a class="text-uppercase text-white font-weight-bold" href="/team/">Team</a></p>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
   <div class="container">
     <div class="row justify-content-lg-between justify-content-start align-items-center">
       <div class="col-auto">

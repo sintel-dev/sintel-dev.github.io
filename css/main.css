@@ -9940,6 +9940,10 @@ a.hover-opacity:hover {
   background-image: linear-gradient(30deg, #060117, #15123D, #15304E, #2B4A41);
 }
 
+.orange-gradinent {
+  background-image: linear-gradient(30deg, #ED9743, #ED9743);
+}
+
 .hero {
   margin-top: 78px;
   background-size: cover;
@@ -9969,6 +9973,15 @@ a.hover-opacity:hover {
     background-size: cover;
     max-height: 680px;
   }
+}
+
+.page-hero {
+  margin-top: 78px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: auto;
+  background-image: url("/images/hero-sm.png");
 }
 
 .outer {
@@ -10132,6 +10145,18 @@ a.hover-opacity:hover {
 
 .bg-code {
   background-color: #282c34;
+}
+
+.bg-orange {
+  background-color: #ED9743;
+}
+
+.bg-navy-blue {
+  background-color: #16283E;
+}
+
+.bg-navy-green {
+  background-color: #204255;
 }
 
 /* Layout */

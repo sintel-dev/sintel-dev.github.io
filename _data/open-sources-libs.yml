@@ -50,31 +50,33 @@
   slack_link: ''
   docs_link: ""
 
-- Library_name: TSGym
-  badge_name: TSGym
-  image_name: TSGym
-  Github_Link: "https://github.com/sintel-dev/TSGym"
+- Library_name: SigPro
+  badge_name: SigPro
+  image_name: SigPro
+  Github_Link: "https://github.com/sintel-dev/SigPro"
   github_owner: "sintel-dev"
-  github_repo: "TSGym"
-  Theme: Benchmarking
-  Text_in_it: "Benchmarks machine learning models for different tasks."
-  website: https://github.com/sintel-dev/TSGym
+  github_repo: "SigPro"
+  Theme: Signal Processing
+  Text_in_it: "Featurizes time series with domain knowledge encoded for machine learning uses."
+  website: https://sintel.dev
   Stackoverflow: 
   slack_link: ''
-  docs_link: ""
+  docs_link: ''
 
-- Library_name: Sintel
-  badge_name: Sintel
-  image_name: Sintel
-  Github_Link: "https://github.com/sintel-dev/sintel"
+
+
+- Library_name: zephyr
+  badge_name: gpe
+  image_name: gpe
+  Github_Link: "https://github.com/sintel-dev/zephyr"
   github_owner: "sintel-dev"
-  github_repo: "Sintel"
-  Theme: User Interaction
-  Text_in_it: "Enables your team to build human-in-the-loop analytics workflow with predefined RESTFul APIs and MongoDB Schema."
-  website: https://github.com/sintel-dev/sintel
+  github_repo: "zephyr"
+  Theme: Data Labeling
+  Text_in_it: "Prediction engineering methods for wind turbine maintenance."
+  website: https://github.com/sintel-dev/gpe
   Stackoverflow: 
   slack_link: ''
-  docs_link: "http://mtv.lids.mit.edu:3000/redoc"
+  docs_link: ''
 
 - Library_name: MTV
   badge_name: MTV
@@ -89,28 +91,29 @@
   slack_link: ''
   docs_link: ''
 
-- Library_name: gpe
-  badge_name: gpe
-  image_name: gpe
-  Github_Link: "https://github.com/sintel-dev/gpe"
+- Library_name: Sintel
+  badge_name: Sintel
+  image_name: Sintel
+  Github_Link: "https://github.com/sintel-dev/sintel"
   github_owner: "sintel-dev"
-  github_repo: "gpe"
-  Theme: Data Labeling
-  Text_in_it: "Creates labeling functions to search occurrences of specific types of events in the past."
-  website: https://github.com/sintel-dev/gpe
+  github_repo: "Sintel"
+  Theme: User Interaction
+  Text_in_it: "Enables your team to build human-in-the-loop analytics workflow with predefined RESTFul APIs and MongoDB Schema."
+  website: https://github.com/sintel-dev/sintel
   Stackoverflow: 
   slack_link: ''
-  docs_link: ''
+  docs_link: "http://mtv.lids.mit.edu:3000/redoc"
 
-- Library_name: SigPro
-  badge_name: SigPro
-  image_name: SigPro
-  Github_Link: "https://github.com/sintel-dev/SigPro"
+
+- Library_name: TSGym
+  badge_name: TSGym
+  image_name: TSGym
+  Github_Link: "https://github.com/sintel-dev/TSGym"
   github_owner: "sintel-dev"
-  github_repo: "SigPro"
-  Theme: Signal Processing
-  Text_in_it: "Featurizes time series with domain knowledge encoded for machine learning uses."
-  website: https://sintel.dev
+  github_repo: "TSGym"
+  Theme: Benchmarking
+  Text_in_it: "Benchmarks machine learning models for different tasks."
+  website: https://github.com/sintel-dev/TSGym
   Stackoverflow: 
   slack_link: ''
-  docs_link: ''
+  docs_link: ""

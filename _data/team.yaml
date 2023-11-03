@@ -1,60 +1,95 @@
-- name: Dongyu Liu
-  link: "http://dongyu.tech/"
-  image: dongyu.jpeg
-  title: Postdoc (Project Lead)
+# - name: Dongyu Liu
+#   link: "http://dongyu.tech/"
+#   image: dongyu.jpeg
+#   title: Postdoc (Project Lead)
+#   info: DAI Lab, MIT
+- name: Kalyan Veeramachaneni
+  link: ""
+  image: kalyan.jpeg
+  title: Principal Investigator
   info: DAI Lab, MIT
 - name: Sarah Alnegheimish
   link: ""
   image: mit-sarah.png
   title: MS Student (Project Co-Lead)
   info: DAI Lab, MIT
-- name: Kalyan Veeramachaneni
+- name: Sara Pido
   link: ""
-  image: kalyan.jpeg
-  title: Principal Investigator
-  info: DAI Lab, MIT
-- name: Frances Hartwell
-  link: ""
-  image: frances.png
-  title: MS Student
-  info: DAI Lab, MIT
-- name: Lawrence Wong
-  link: ""
-  image: lawrence-min.png
-  title: MS Student
-  info: DAI Lab, MIT
-- name: Hugo Ramirez
-  link: ""
-  image: hugo.jpeg
-  title: UROP Student
-  info: DAI Lab, MIT
+  image: sara-pido.jpeg
+  title: Postdoc
+  info: 
 - name: LAURE BERTI-ÉQUILLE
   link: ""
   image: laure.jpeg
   title: Visiting Professor
   info: DAI Lab, MIT
-- name: Avi Shah
-  link: ""
-  image: avi.png
-  title: Visiting UG Student
-  info: DAI Lab, MIT
-- name: Plamen Valentinov Kolev
-  link: ""
-  image: mit-plamen.png
-  title: Software Engineer
-- name: Carles Sala
-  link: ""
-  image: mit-carles.png
-  title: Software Engineer
-- name: Sergiu Ojoc
-  link: ""
-  image: sergiu.png
-  title: Frontend Developer
-- name: Iulia Ionescu
-  link: ""
-  image: iulia.png
-  title: UI/UX Designer
 - name: Arash Akhgari
   link: ""
   image: arash.jpg
   title: Animator & Graphic Designer
+  info:
+- name: Linh Nguyen
+  link: ''
+  image: linh-nguyen.jpeg
+  title: 
+  info: UROP
+- name: Brendon Reperttang
+  link: ''
+  image: brendon-reperttang.jpeg
+  title: 
+  info: UROP
+- name: Raymond Pan
+  link: ''
+  image: raymond-pan.jpeg
+  title: 
+  info: UROP
+- name: Grace Song
+  link: ''
+  image: grace-song.jpeg
+  title: 
+  info: MEng
+- name: Guanpeng (Andy) Xu
+  link: ''
+  image: guanpeng.jpeg 
+  title: 
+  info: MEng
+
+
+# - name: Frances Hartwell
+#   link: ""
+#   image: frances.png
+#   title: MS Student
+#   info: DAI Lab, MIT
+# - name: Lawrence Wong
+#   link: ""
+#   image: lawrence-min.png
+#   title: MS Student
+#   info: DAI Lab, MIT
+# - name: Hugo Ramirez
+#   link: ""
+#   image: hugo.jpeg
+#   title: UROP Student
+#   info: DAI Lab, MIT
+
+# - name: Avi Shah
+#   link: ""
+#   image: avi.png
+#   title: Visiting UG Student
+#   info: DAI Lab, MIT
+# - name: Plamen Valentinov Kolev
+#   link: ""
+#   image: mit-plamen.png
+#   title: Software Engineer
+# - name: Carles Sala
+#   link: ""
+#   image: mit-carles.png
+#   title: Software Engineer
+# - name: Sergiu Ojoc
+#   link: ""
+#   image: sergiu.png
+#   title: Frontend Developer
+# - name: Iulia Ionescu
+#   link: ""
+#   image: iulia.png
+#   title: UI/UX Designer
+

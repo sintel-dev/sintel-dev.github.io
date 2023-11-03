@@ -1,15 +1,15 @@
-- title: Satellite
-  subtitle: Monitor satellite telemetry and solve an unsupervised time series anomaly detection problem.
+- title: SES
+  subtitle: Monitor satellite telemetry and solve an unsupervised time series anomaly detection problem.
   image: /images/use-cases/rocket.svg
   cta_text: 
   cta_url: "https://medium.com/@dailabmit"
-- title: Wind Turbine
-  subtitle: Monitor wind energy production systems and solve a time series classification problem.
+- title: Iberdrola
+  subtitle: Monitor wind energy production systems and solve a time series classification problem.
   image: /images/use-cases/turbine.svg
   cta_text: 
   cta_url: "https://medium.com/@dailabmit"
-- title: Water
-  subtitle: Monitor water distribution and delivery networks and address time series classification and regression problems.
-  image: /images/use-cases/water.svg
-  cta_text: 
-  cta_url: "https://medium.com/@dailabmit"
+# - title: Water
+#   subtitle: Monitor water distribution and delivery networks and address time series classification and regression problems.
+#   image: /images/use-cases/water.svg
+#   cta_text: 
+#   cta_url: "https://medium.com/@dailabmit"
