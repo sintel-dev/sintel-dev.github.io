@@ -24,34 +24,6 @@
     sigpro.process_signal(data)
 
   output: /images/tabs/img/sigpro-output.png
-- title: Forecasting
-  name: pyteller
-  slug: sintel-dev/sintel
-  subtitle: Predict future values by analyzing past trends.
-  image:
-  icon: /img/pyteller.svg
-  code: |+
-    from pyteller.data import load_data
-    from pyteller.core import Pyteller
-
-    train_data = load_data(
-      'pyteller/data/AL_Weather_current.csv')
-    test_data = load_data(
-      'pyteller/data/AL_Weather_input.csv')
-
-    pyteller = Pyteller(
-      pipeline=('pyteller/pipelines/sandbox/'
-                'LSTM/LSTM_offset.json'),
-      pred_length=6, offset=1)
-
-    pyteller.fit(
-      data=train_data,
-      timestamp_col='valid', target_signal='tmpf',
-      entity_col='station', entities='8A0')
-    
-    pyteller.forecast(data=test_data)
-
-  output: /images/tabs/img/forecasting-output.png
 - title: Anomaly Detection
   name: orion
   slug: sintel-dev/Orion
@@ -99,6 +71,34 @@
     draco.predict(test, readings)
 
   output: /images/tabs/img/classification-output.png
+- title: Forecasting
+  name: pyteller
+  slug: sintel-dev/sintel
+  subtitle: Predict future values by analyzing past trends.
+  image:
+  icon: /img/pyteller.svg
+  code: |+
+    from pyteller.data import load_data
+    from pyteller.core import Pyteller
+
+    train_data = load_data(
+      'pyteller/data/AL_Weather_current.csv')
+    test_data = load_data(
+      'pyteller/data/AL_Weather_input.csv')
+
+    pyteller = Pyteller(
+      pipeline=('pyteller/pipelines/sandbox/'
+                'LSTM/LSTM_offset.json'),
+      pred_length=6, offset=1)
+
+    pyteller.fit(
+      data=train_data,
+      timestamp_col='valid', target_signal='tmpf',
+      entity_col='station', entities='8A0')
+    
+    pyteller.forecast(data=test_data)
+
+  output: /images/tabs/img/forecasting-output.png
 - title: Benchmarking
   name: benchmark
   slug: sintel-dev/Orion

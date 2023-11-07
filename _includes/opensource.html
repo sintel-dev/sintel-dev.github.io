@@ -1,9 +1,7 @@
 <section class="py-3 bg-light position-relative" id="">
   <span class="anchor" id="opensource"></span>
   <div class="container">
-    {% include heading.html title="Open Source" subtitle="Sintel is an ecosystem for time series processing, labeling, 
-    modeling, benchmarking, and user interactions. Explore the ecosystem of open source libraries supporting the Sintel.
-    Each can be used as a standalone package for particular needs." classname="text-center" %}
+    {% include heading.html title="Open Source" subtitle="Explore the Sintel ecosystem and its open source libraries. These libraries support a variety of time series tasks including generative modeling for time series, labeling, benchmarking, and user interactions." classname="text-center" %}
   </div>
 
 {% assign libs = site.data.open-sources-libs %}
@@ -65,7 +63,7 @@
       </div>
       
       <div class="row justify-content-center justify-content-lg-start" id="libWarp">
-        {% assign libs = site.data.open-sources-libs | sort_natural: "Library_name" %}
+        {% assign libs = site.data.open-sources-libs %}
         {% for item in libs %}
         {% assign item_themes = item.Theme | split: ","%}
         {% assign item_projects = item.Project | split: ","%}

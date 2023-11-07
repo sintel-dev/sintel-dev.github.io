@@ -6,3 +6,7 @@
   image: images/sponsors/iberdrola.png
   url: "https://www.iberdrola.com/"
   width: 20rem
+- name: hyundai
+  image: images/sponsors/hyundai-logo.png
+  url: "https://www.hyundai.com/worldwide/en"
+  width: 15rem
