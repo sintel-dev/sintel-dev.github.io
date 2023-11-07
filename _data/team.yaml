@@ -7,12 +7,12 @@
   link: ""
   image: kalyan.jpeg
   title: Principal Investigator
-  info: DAI Lab, MIT
+  info: 
 - name: Sarah Alnegheimish
   link: ""
   image: mit-sarah.png
-  title: MS Student (Project Co-Lead)
-  info: DAI Lab, MIT
+  title: PhD Student (Project Lead)
+  info: 
 - name: Sara Pido
   link: ""
   image: sara-pido.jpeg
@@ -22,7 +22,7 @@
   link: ""
   image: laure.jpeg
   title: Visiting Professor
-  info: DAI Lab, MIT
+  info: 
 - name: Arash Akhgari
   link: ""
   image: arash.jpg
