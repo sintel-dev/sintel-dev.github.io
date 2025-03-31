@@ -5,35 +5,36 @@
   github_owner: "sintel-dev"
   github_repo: "Orion"
   Theme: ML Task
-  Text_in_it: "Identifies anomalous time series segments."
+  Text_in_it: "Python library for unsupervised time series anomaly detection."
   website: https://signals-dev.github.io/Orion/
   Stackoverflow: ''
   slack_link: ''
   docs_link: "https://sintel.dev/Orion/"
-       
-- Library_name: Draco
-  badge_name: Draco
-  image_name: Draco
-  Github_Link: "https://github.com/sintel-dev/Draco"
+
+
+- Library_name: sigllm
+  badge_name: sigllm
+  image_name: SigPro2
+  Github_Link: https://github.com/sintel-dev/sigllm
   github_owner: "sintel-dev"
-  github_repo: "Draco"
+  github_repo: "sigllm"
   Theme: ML Task
-  Text_in_it: "Classifies time series segments into particular categories."
-  website: https://github.com/sintel-dev/Draco
-  Stackoverflow: ''
+  Text_in_it: "Detecting anomalies in time series using large language models."
+  website: https://github.com/sintel-dev/sigllm
+  Stackoverflow:
   slack_link: ''
-  docs_link: "https://sintel.dev/Draco/"
-       
-- Library_name: pyteller
-  badge_name: pyteller
-  image_name: pyteller
-  Github_Link: "https://github.com/sintel-dev/pyteller"
+  docs_link: ''
+
+- Library_name: SigPro
+  badge_name: SigPro
+  image_name: SigPro
+  Github_Link: "https://github.com/sintel-dev/SigPro"
   github_owner: "sintel-dev"
-  github_repo: "pyteller"
-  Theme: ML Task 
-  Text_in_it: "Predicts future values by analyzing past trends."
-  website: https://github.com/sintel-dev/pyteller
-  Stackoverflow: ''
+  github_repo: "SigPro"
+  Theme: Signal Processing
+  Text_in_it: "Featurizing time series data for downstream machine learning tasks."
+  website: https://sintel.dev
+  Stackoverflow: 
   slack_link: ''
   docs_link: ''
 
@@ -44,26 +45,11 @@
   github_owner: "sintel-dev"
   github_repo: "ml-stars"
   Theme: ML Task, Benchmarking
-  Text_in_it: "Stores a collection of pipelines that will be used by Orion, Draco, and Pyteller."
+  Text_in_it: "Providing primitives and pipelines for time series tasks."
   website: https://github.com/sintel-dev/ml-stars
   Stackoverflow: 
   slack_link: ''
   docs_link: ""
-
-- Library_name: SigPro
-  badge_name: SigPro
-  image_name: SigPro
-  Github_Link: "https://github.com/sintel-dev/SigPro"
-  github_owner: "sintel-dev"
-  github_repo: "SigPro"
-  Theme: Signal Processing
-  Text_in_it: "Featurizes time series with domain knowledge encoded for machine learning uses."
-  website: https://sintel.dev
-  Stackoverflow: 
-  slack_link: ''
-  docs_link: ''
-
-
 
 - Library_name: zephyr
   badge_name: gpe
@@ -72,7 +58,7 @@
   github_owner: "sintel-dev"
   github_repo: "zephyr"
   Theme: Data Labeling
-  Text_in_it: "Prediction engineering methods for wind turbine maintenance."
+  Text_in_it: "A machine learning library for assisting in the generation of machine learning problems for wind farms operations data by analyzing past occurrences of events."
   website: https://github.com/sintel-dev/gpe
   Stackoverflow: 
   slack_link: ''
@@ -85,7 +71,7 @@
   github_owner: "sintel-dev"
   github_repo: "sintel"
   Theme: User Interaction
-  Text_in_it: "Integrates a suite of visualization techniques to support complex analytic workflow with human-in-the-loop "
+  Text_in_it: "A visualization platform for complex time series analytics."
   website: https://github.com/sintel-dev/MTV
   Stackoverflow: 
   slack_link: ''
@@ -98,22 +84,8 @@
   github_owner: "sintel-dev"
   github_repo: "Sintel"
   Theme: User Interaction
-  Text_in_it: "Enables your team to build human-in-the-loop analytics workflow with predefined RESTFul APIs and MongoDB Schema."
+  Text_in_it: "Providing RESTful APIs to process signals."
   website: https://github.com/sintel-dev/sintel
   Stackoverflow: 
   slack_link: ''
   docs_link: "http://mtv.lids.mit.edu:3000/redoc"
-
-
-- Library_name: TSGym
-  badge_name: TSGym
-  image_name: TSGym
-  Github_Link: "https://github.com/sintel-dev/TSGym"
-  github_owner: "sintel-dev"
-  github_repo: "TSGym"
-  Theme: Benchmarking
-  Text_in_it: "Benchmarks machine learning models for different tasks."
-  website: https://github.com/sintel-dev/TSGym
-  Stackoverflow: 
-  slack_link: ''
-  docs_link: ""

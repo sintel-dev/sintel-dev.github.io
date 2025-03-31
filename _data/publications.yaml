@@ -1,17 +1,45 @@
 - title: >-
+    Can Large Language Models be Anomaly Detectors for Time Series?
+  subtitle: >-
+    Sarah Alnegheimish, Linh Nguyen, Laure Berti-Equille, Kalyan Veeramachaneni
+  tag: DSAA
+  tag_text: IEEE International Conference on Data Science and Advanced Analytics, 2024.
+  image: /images/publications/llm.png
+  links: 
+    - name: "pdf"
+      url: "https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10722786"
+    - name: "bib"
+      url: "https://github.com/sintel-dev/sigllm"
+    - name: "news"
+      url: "https://news.mit.edu/2024/researchers-use-large-language-models-to-flag-problems-0814"
+
+- title: >-
+    OrionBench: Benchmarking Time Series Generative Models in the Service of the End-User
+  subtitle: >-
+    Sarah Alnegheimish, Laure Berti-Equille, Kalyan Veeramachaneni
+  tag: BigData
+  tag_text:  IEEE International Conference on Big Data, 2024.
+  image: /images/publications/orionbench.png
+  links: 
+    - name: "pdf"
+      url: "https://arxiv.org/pdf/2310.1774"
+    - name: "code"
+      url: "https://github.com/sintel-dev/Orion"
+
+- title: >-
     AER: Auto-Encoder with Regression for Time Series Anomaly Detection
   subtitle: >-
     Lawrence Wong, Dongyu Liu, Laure Berti-Equille, Sarah Alnegheimish, Kalyan Veeramachaneni
   tag: BigData
-  tag_text: IEEE International Conference on BigData, 2022. (to appear)
+  tag_text: IEEE International Conference on BigData, 2022.
   image: /images/publications/2022_aer_bigdata.png
   links: 
     - name: "pdf"
-      url: "#"
+      url: "https://arxiv.org/pdf/2212.13558"
     - name: "bib"
       url: "#"
     - name: "code"
-      url: "#"
+      url: "https://github.com/sintel-dev/Orion"
 - title: >-
     Sintel: A Machine Learning Framework to Extract Insights from Signals
   subtitle: >-
@@ -50,8 +78,8 @@
   tag: BigData
   tag_text: IEEE International Conference on BigData, 2020
   image: /images/publications/tadgan.svg
-  cta_text: GitHub stars > 600
-  cta_url: "https://github.com/sintel-dev/Orion"
+  # cta_text: GitHub stars > 600
+  # cta_url: "https://github.com/sintel-dev/Orion"
   links: 
     - name: "pdf"
       url: "http://dongyu.tech/resource/paper/tadgan_2020_ieeebigdata.pdf"

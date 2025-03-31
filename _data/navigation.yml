@@ -1,4 +1,6 @@
 items:
+  - title: Home
+    url: "/"
   - title: Resources
     url: "/resources/"
   - title: Team

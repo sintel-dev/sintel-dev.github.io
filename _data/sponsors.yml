@@ -10,3 +10,7 @@
   image: images/sponsors/hyundai-logo.png
   url: "https://www.hyundai.com/worldwide/en"
   width: 15rem
+- name: ge vernova
+  image: images/sponsors/ge-vernova.svg
+  url: "https://www.gevernova.com/"
+  width: 15rem

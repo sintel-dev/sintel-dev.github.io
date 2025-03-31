@@ -13,46 +13,53 @@
   image: mit-sarah.png
   title: PhD Student (Project Lead)
   info: 
-- name: Sara Pido
-  link: ""
-  image: sara-pido.jpeg
-  title: Postdoc
-  info: 
 - name: LAURE BERTI-ÉQUILLE
   link: ""
   image: laure.jpeg
   title: Visiting Professor
   info: 
-- name: Arash Akhgari
-  link: ""
-  image: arash.jpg
-  title: Animator & Graphic Designer
-  info:
-- name: Linh Nguyen
-  link: ''
-  image: linh-nguyen.jpeg
-  title: 
-  info: UROP
-- name: Brendon Reperttang
-  link: ''
-  image: brendon-reperttang.jpeg
-  title: 
-  info: UROP
 - name: Raymond Pan
   link: ''
   image: raymond-pan.jpeg
   title: 
   info: UROP
-- name: Grace Song
+- name: Salim Cherkaoui
   link: ''
-  image: grace-song.jpeg
-  title: 
-  info: MEng
-- name: Guanpeng (Andy) Xu
-  link: ''
-  image: guanpeng.jpeg 
-  title: 
-  info: MEng
+  image: salim-cherkaoui.jpeg
+  title: Visiting Student
+  info: 
+# - name: Sara Pido
+#   link: ""
+#   image: sara-pido.jpeg
+#   title: Postdoc
+#   info: 
+
+# - name: Arash Akhgari
+#   link: ""
+#   image: arash.jpg
+#   title: Animator & Graphic Designer
+#   info:
+# - name: Linh Nguyen
+#   link: ''
+#   image: linh-nguyen.jpeg
+#   title: 
+#   info: UROP
+# - name: Brendon Reperttang
+#   link: ''
+#   image: brendon-reperttang.jpeg
+#   title: 
+#   info: UROP
+
+# - name: Grace Song
+#   link: ''
+#   image: grace-song.jpeg
+#   title: 
+#   info: MEng
+# - name: Guanpeng (Andy) Xu
+#   link: ''
+#   image: guanpeng.jpeg 
+#   title: 
+#   info: MEng
 
 
 # - name: Frances Hartwell

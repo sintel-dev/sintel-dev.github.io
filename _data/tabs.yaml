@@ -36,69 +36,16 @@
 
     train_data = load_signal('S-1-train')
 
-    orion = Orion(pipeline='lstm_dynamic_threshold')
-
+    orion = Orion('aer')
     orion.fit(train_data)
 
     new_data = load_signal('S-1-new')
-    
+
     orion.detect(new_data)
 
   output: /images/tabs/img/anomaly-output.png
-- title: Classification
-  name: draco_c
-  slug: sintel-dev/Orion
-  subtitle: Classify time series segments into particular categories.
-  image:
-  icon: /img/Draco.svg
-  code: |+ 
-    from draco.demo import load_demo
-    from draco.pipeline import DracoPipeline
-    from sklearn.model_selection import train_test_split
 
-    target_times, readings = load_demo()
 
-    train, test = train_test_split(
-      target_times, test_size=0.25, random_state=0)
-    
-    test_targets = test.pop('target')
-
-    draco = DracoPipeline(
-      'classes.normalize_dfs_xgb_classifier')
-    
-    draco.fit(train, readings)
-    
-    draco.predict(test, readings)
-
-  output: /images/tabs/img/classification-output.png
-- title: Forecasting
-  name: pyteller
-  slug: sintel-dev/sintel
-  subtitle: Predict future values by analyzing past trends.
-  image:
-  icon: /img/pyteller.svg
-  code: |+
-    from pyteller.data import load_data
-    from pyteller.core import Pyteller
-
-    train_data = load_data(
-      'pyteller/data/AL_Weather_current.csv')
-    test_data = load_data(
-      'pyteller/data/AL_Weather_input.csv')
-
-    pyteller = Pyteller(
-      pipeline=('pyteller/pipelines/sandbox/'
-                'LSTM/LSTM_offset.json'),
-      pred_length=6, offset=1)
-
-    pyteller.fit(
-      data=train_data,
-      timestamp_col='valid', target_signal='tmpf',
-      entity_col='station', entities='8A0')
-    
-    pyteller.forecast(data=test_data)
-
-  output: /images/tabs/img/forecasting-output.png
 - title: Benchmarking
   name: benchmark
   slug: sintel-dev/Orion
